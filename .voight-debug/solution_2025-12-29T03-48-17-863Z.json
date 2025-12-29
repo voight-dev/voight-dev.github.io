@@ -1,0 +1,2681 @@
+{
+  "blocks": [
+    {
+      "block_no": 0,
+      "line_number_start": 3,
+      "line_number_end": 7,
+      "code": "  \"description\": \"Voight – A VS Code extension that surfaces AI-generated code in reviewable segments\",\n  \"scripts\": {\n    \"dev\": \"vite\",\n    \"build\": \"tsc && vite build\",\n    \"preview\": \"vite preview\"",
+      "timestamp": "2025-12-29T03:52:26.942Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/package.json"
+    },
+    {
+      "block_no": 1,
+      "line_number_start": 13,
+      "line_number_end": 16,
+      "code": "  \"keywords\": [\"vscode\", \"ai\", \"code-review\", \"extension\"],\n  \"author\": \"\",\n  \"license\": \"ISC\",\n  \"type\": \"module\",",
+      "timestamp": "2025-12-29T03:53:11.854Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/package.json"
+    },
+    {
+      "block_no": 2,
+      "line_number_start": 291,
+      "line_number_end": 294,
+      "code": ".how-it-works .section-label {\n  text-align: center;\n}\n",
+      "timestamp": "2025-12-29T03:58:56.385Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 3,
+      "line_number_start": 18,
+      "line_number_end": 19,
+      "code": "          <svg width=\"24\" height=\"24\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n            <path d=\"M20.3223 23.3633L16.0059 32L0 0.0078125L9.33203 0.00488281L20.3223 23.3633ZM23.0293 17.9463L14.5869 0.00390625L32 0L23.0293 17.9463Z\" fill=\"white\"/>",
+      "timestamp": "2025-12-29T03:59:57.827Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 4,
+      "line_number_start": 111,
+      "line_number_end": 112,
+      "code": "          <svg width=\"20\" height=\"20\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n            <path d=\"M20.3223 23.3633L16.0059 32L0 0.0078125L9.33203 0.00488281L20.3223 23.3633ZM23.0293 17.9463L14.5869 0.00390625L32 0L23.0293 17.9463Z\" fill=\"white\"/>",
+      "timestamp": "2025-12-29T04:00:25.901Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 5,
+      "line_number_start": 18,
+      "line_number_end": 18,
+      "code": "          <svg width=\"28\" height=\"28\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">",
+      "timestamp": "2025-12-29T04:06:48.827Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 6,
+      "line_number_start": 35,
+      "line_number_end": 35,
+      "code": "        <h1 class=\"hero-headline\"><span class=\"highlight\">Understanding</span> at the speed of <span class=\"highlight\">shipping.</span></h1>",
+      "timestamp": "2025-12-29T04:06:57.025Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 7,
+      "line_number_start": 129,
+      "line_number_end": 136,
+      "code": ".hero-headline .highlight {\n  background: linear-gradient(135deg, #007acc 0%, #1e8ad6 100%);\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n  background-clip: text;\n  position: relative;\n}\n",
+      "timestamp": "2025-12-29T04:07:10.623Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 8,
+      "line_number_start": 35,
+      "line_number_end": 43,
+      "code": "        <h1 class=\"hero-headline\">\n          <span class=\"line-number\">1</span>\n          <span class=\"code-text\">\n            <span class=\"keyword\">Understanding</span>\n            <span class=\"operator\">at the speed of</span>\n            <span class=\"string\">shipping</span><span class=\"punctuation\">.</span>\n          </span>\n          <span class=\"cursor\"></span>\n        </h1>",
+      "timestamp": "2025-12-29T04:11:39.756Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 9,
+      "line_number_start": 120,
+      "line_number_end": 156,
+      "code": "  font-family: var(--font-mono);\n  font-size: 2.75rem;\n  font-weight: 500;\n  line-height: 1.4;\n  letter-spacing: -0.01em;\n  margin-bottom: var(--spacing-xl);\n  display: flex;\n  align-items: center;\n  gap: var(--spacing-md);\n  background-color: rgba(255, 255, 255, 0.02);\n  padding: var(--spacing-lg) var(--spacing-xl);\n  border-radius: 8px;\n  border: 1px solid var(--border-color);\n}\n\n.line-number {\n  color: var(--text-secondary);\n  opacity: 0.4;\n  font-size: 0.9em;\n  user-select: none;\n  min-width: 2ch;\n}\n\n.code-text {\n  flex: 1;\n}\n\n.keyword {\n  color: #569cd6;\n}\n\n.operator {\n  color: #6e7681;\n  margin: 0 0.25em;\n}\n\n.string {",
+      "timestamp": "2025-12-29T04:11:59.563Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 11,
+      "line_number_start": 160,
+      "line_number_end": 181,
+      "code": ".punctuation {\n  color: #6e7681;\n}\n\n.cursor {\n  display: inline-block;\n  width: 0.6em;\n  height: 1.2em;\n  background-color: var(--text-bright);\n  margin-left: 0.1em;\n  animation: blink 1s step-end infinite;\n}\n\n@keyframes blink {\n  0%, 50% {\n    opacity: 1;\n  }\n  51%, 100% {\n    opacity: 0;\n  }\n}\n",
+      "timestamp": "2025-12-29T04:11:59.563Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 11,
+      "line_number_start": 449,
+      "line_number_end": 463,
+      "code": "    font-size: 1.75rem;\n    padding: var(--spacing-md) var(--spacing-lg);\n    gap: var(--spacing-sm);\n    flex-direction: column;\n    align-items: flex-start;\n  }\n\n  .line-number {\n    font-size: 0.8em;\n  }\n\n  .cursor {\n    height: 1em;\n  }\n",
+      "timestamp": "2025-12-29T04:12:09.412Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 12,
+      "line_number_start": 466,
+      "line_number_end": 466,
+      "code": "    text-align: center;",
+      "timestamp": "2025-12-29T04:12:26.247Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 13,
+      "line_number_start": 190,
+      "line_number_end": 190,
+      "code": "  text-align: center;",
+      "timestamp": "2025-12-29T04:12:35.230Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 14,
+      "line_number_start": 197,
+      "line_number_end": 197,
+      "code": "  align-items: center;",
+      "timestamp": "2025-12-29T04:12:42.402Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 15,
+      "line_number_start": 36,
+      "line_number_end": 38,
+      "code": "          <span class=\"keyword\">Understanding</span>\n          <span class=\"operator\">at the speed of</span>\n          <span class=\"string\">shipping</span><span class=\"punctuation\">.</span>",
+      "timestamp": "2025-12-29T04:16:33.497Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 16,
+      "line_number_start": 21,
+      "line_number_end": 24,
+      "code": "  --font-sans: 'JetBrains Mono', 'Courier New', monospace;\n  --font-mono: 'JetBrains Mono', 'Courier New', monospace;\n\n  /* Spacing - Grid-based (8px base) */",
+      "timestamp": "2025-12-29T04:16:48.621Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 18,
+      "line_number_start": 36,
+      "line_number_end": 36,
+      "code": "  --grid-size: 8px;",
+      "timestamp": "2025-12-29T04:16:48.621Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 18,
+      "line_number_start": 44,
+      "line_number_end": 44,
+      "code": "  font-family: var(--font-mono);",
+      "timestamp": "2025-12-29T04:16:58.462Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 20,
+      "line_number_start": 50,
+      "line_number_end": 72,
+      "code": "  position: relative;\n}\n\nbody::before {\n  content: '';\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  background-image:\n    linear-gradient(rgba(62, 62, 66, 0.15) 1px, transparent 1px),\n    linear-gradient(90deg, rgba(62, 62, 66, 0.15) 1px, transparent 1px);\n  background-size: var(--grid-size) var(--grid-size);\n  pointer-events: none;\n  z-index: 0;\n}\n\nbody > * {\n  position: relative;\n  z-index: 1;\n}\n",
+      "timestamp": "2025-12-29T04:16:58.462Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 20,
+      "line_number_start": 151,
+      "line_number_end": 161,
+      "code": "  position: relative;\n}\n\n.hero-headline::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 4px;\n  height: 100%;\n  background: linear-gradient(180deg, var(--accent-blue) 0%, transparent 100%);",
+      "timestamp": "2025-12-29T04:17:10.000Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 21,
+      "line_number_start": 183,
+      "line_number_end": 184,
+      "code": "  font-size: 1rem;\n  line-height: 1.6;",
+      "timestamp": "2025-12-29T04:17:42.786Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 23,
+      "line_number_start": 191,
+      "line_number_end": 194,
+      "code": "  padding: var(--spacing-lg);\n  background-color: rgba(255, 255, 255, 0.02);\n  border: 1px solid var(--border-color);\n  border-left: 3px solid var(--border-color);",
+      "timestamp": "2025-12-29T04:17:42.786Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 23,
+      "line_number_start": 282,
+      "line_number_end": 290,
+      "code": "  padding: var(--spacing-xl);\n  background-color: rgba(255, 255, 255, 0.02);\n  border: 1px solid var(--border-color);\n  position: relative;\n}\n\n.context-content::after {\n  content: '';\n  position: absolute;",
+      "timestamp": "2025-12-29T04:17:53.468Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 25,
+      "line_number_start": 291,
+      "line_number_end": 300,
+      "code": "  bottom: 0;\n  right: 0;\n  width: 80px;\n  height: 80px;\n  border-right: 1px solid var(--border-color);\n  border-bottom: 1px solid var(--border-color);\n}\n\n.context-content p {\n  font-size: 0.9375rem;",
+      "timestamp": "2025-12-29T04:17:53.468Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 25,
+      "line_number_start": 322,
+      "line_number_end": 336,
+      "code": "  padding-bottom: var(--spacing-sm);\n  border-bottom: 1px solid var(--border-color);\n  position: relative;\n}\n\n.section-label::before {\n  content: '';\n  position: absolute;\n  bottom: -1px;\n  left: 0;\n  width: 60px;\n  height: 2px;\n  background-color: var(--accent-blue);\n}\n",
+      "timestamp": "2025-12-29T04:18:05.943Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 26,
+      "line_number_start": 348,
+      "line_number_end": 353,
+      "code": "  position: relative;\n}\n\n.feature-card::before {\n  content: '';\n  position: absolute;",
+      "timestamp": "2025-12-29T04:18:34.034Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 28,
+      "line_number_start": 354,
+      "line_number_end": 359,
+      "code": "  top: 0;\n  left: 0;\n  width: 12px;\n  height: 12px;\n  border-top: 2px solid var(--border-color);\n  border-left: 2px solid var(--border-color);",
+      "timestamp": "2025-12-29T04:18:34.034Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 30,
+      "line_number_start": 360,
+      "line_number_end": 365,
+      "code": "}\n\n.feature-card::after {\n  content: '';\n  position: absolute;\n  bottom: 0;",
+      "timestamp": "2025-12-29T04:18:34.034Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 32,
+      "line_number_start": 366,
+      "line_number_end": 372,
+      "code": "  right: 0;\n  width: 12px;\n  height: 12px;\n  border-bottom: 2px solid var(--border-color);\n  border-right: 2px solid var(--border-color);\n}\n",
+      "timestamp": "2025-12-29T04:18:34.034Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 34,
+      "line_number_start": 377,
+      "line_number_end": 381,
+      "code": ".feature-card:hover::before,\n.feature-card:hover::after {\n  border-color: var(--accent-blue);\n}\n",
+      "timestamp": "2025-12-29T04:18:34.035Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 31,
+      "line_number_start": 383,
+      "line_number_end": 390,
+      "code": "  font-size: 1rem;\n  font-weight: 600;\n  color: var(--text-bright);\n  margin-bottom: var(--spacing-md);\n  letter-spacing: -0.01em;\n  text-transform: uppercase;\n  font-size: 0.8125rem;\n  letter-spacing: 0.05em;",
+      "timestamp": "2025-12-29T04:18:44.942Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 33,
+      "line_number_start": 394,
+      "line_number_end": 394,
+      "code": "  font-size: 0.875rem;",
+      "timestamp": "2025-12-29T04:18:44.942Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 33,
+      "line_number_start": 414,
+      "line_number_end": 417,
+      "code": "  padding: var(--spacing-xl);\n  background-color: rgba(255, 255, 255, 0.02);\n  border: 1px solid var(--border-color);\n  border-top: 3px solid var(--accent-blue);",
+      "timestamp": "2025-12-29T04:18:54.201Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 35,
+      "line_number_start": 421,
+      "line_number_end": 421,
+      "code": "  font-size: 0.875rem;",
+      "timestamp": "2025-12-29T04:18:54.201Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 35,
+      "line_number_start": 211,
+      "line_number_end": 211,
+      "code": "  font-size: 0.8125rem;",
+      "timestamp": "2025-12-29T04:23:40.970Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 37,
+      "line_number_start": 216,
+      "line_number_end": 235,
+      "code": "  border: 1px solid var(--border-color);\n  font-family: var(--font-mono);\n  text-transform: uppercase;\n  letter-spacing: 0.05em;\n  position: relative;\n  background-color: rgba(255, 255, 255, 0.02);\n}\n\n.btn::before {\n  content: '';\n  position: absolute;\n  top: -4px;\n  left: -4px;\n  right: -4px;\n  bottom: -4px;\n  border: 1px solid transparent;\n  transition: border-color 0.2s ease;\n  pointer-events: none;\n}\n",
+      "timestamp": "2025-12-29T04:23:40.970Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 39,
+      "line_number_start": 239,
+      "line_number_end": 243,
+      "code": "  border-color: var(--accent-blue);\n}\n\n.btn-primary:hover::before {\n  border-color: var(--accent-blue);",
+      "timestamp": "2025-12-29T04:23:40.970Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 41,
+      "line_number_start": 253,
+      "line_number_end": 253,
+      "code": "  border-color: var(--text-bright);",
+      "timestamp": "2025-12-29T04:23:40.970Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 43,
+      "line_number_start": 257,
+      "line_number_end": 263,
+      "code": ".btn-secondary:hover::before {\n  border-color: var(--border-color);\n}\n\n.btn-large {\n  padding: 1rem 2rem;\n  font-size: 0.875rem;",
+      "timestamp": "2025-12-29T04:23:40.970Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 45,
+      "line_number_start": 454,
+      "line_number_end": 458,
+      "code": "  padding: var(--spacing-2xl);\n  background-color: rgba(255, 255, 255, 0.02);\n  border: 1px solid var(--border-color);\n  position: relative;\n}",
+      "timestamp": "2025-12-29T04:23:40.970Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 47,
+      "line_number_start": 459,
+      "line_number_end": 463,
+      "code": "\n.install-content::before {\n  content: '';\n  position: absolute;\n  top: -1px;",
+      "timestamp": "2025-12-29T04:23:40.970Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 49,
+      "line_number_start": 464,
+      "line_number_end": 468,
+      "code": "  left: 50%;\n  transform: translateX(-50%);\n  width: 120px;\n  height: 3px;\n  background: linear-gradient(90deg, transparent, var(--accent-blue), transparent);",
+      "timestamp": "2025-12-29T04:23:40.970Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 51,
+      "line_number_start": 469,
+      "line_number_end": 476,
+      "code": "}\n\n.install-header {\n  font-size: 2rem;\n  font-weight: 600;\n  color: var(--text-bright);\n  margin-bottom: var(--spacing-sm);\n  letter-spacing: 0.02em;",
+      "timestamp": "2025-12-29T04:23:40.970Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 53,
+      "line_number_start": 480,
+      "line_number_end": 480,
+      "code": "  font-size: 0.875rem;",
+      "timestamp": "2025-12-29T04:23:40.971Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 45,
+      "line_number_start": 550,
+      "line_number_end": 550,
+      "code": "    font-size: 1.5rem;",
+      "timestamp": "2025-12-29T04:23:50.283Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 46,
+      "line_number_start": 147,
+      "line_number_end": 151,
+      "code": "  margin-bottom: var(--spacing-2xl);\n  text-wrap: balance;\n  max-width: 850px;\n  margin-left: auto;\n  margin-right: auto;",
+      "timestamp": "2025-12-29T04:30:47.199Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 47,
+      "line_number_start": 175,
+      "line_number_end": 176,
+      "code": "  color: #a8a8a8;\n  margin-bottom: var(--spacing-2xl);",
+      "timestamp": "2025-12-29T04:30:56.135Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 48,
+      "line_number_start": 236,
+      "line_number_end": 237,
+      "code": "  font-size: 0.875rem;\n  letter-spacing: 0.06em;",
+      "timestamp": "2025-12-29T04:31:05.842Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 49,
+      "line_number_start": 137,
+      "line_number_end": 137,
+      "code": "  max-width: var(--container-width);",
+      "timestamp": "2025-12-29T04:32:50.318Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 50,
+      "line_number_start": 542,
+      "line_number_end": 542,
+      "code": "    font-size: 0.9375rem;",
+      "timestamp": "2025-12-29T04:33:05.060Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 51,
+      "line_number_start": 152,
+      "line_number_end": 152,
+      "code": "  text-align: center;",
+      "timestamp": "2025-12-29T04:34:04.962Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 52,
+      "line_number_start": 35,
+      "line_number_end": 47,
+      "code": "        <div class=\"hero-box\">\n          <h1 class=\"hero-headline\">\n            <span class=\"keyword\">Understanding</span>\n            <span class=\"operator\">at the speed of</span>\n            <span class=\"string\">shipping</span><span class=\"punctuation\">.</span>\n          </h1>\n        </div>\n\n        <div class=\"hero-box\">\n          <p class=\"hero-subheadline\">A VS Code extension that surfaces AI-generated code in reviewable segments. Stay familiar with your codebase without slowing down.</p>\n        </div>\n\n        <div class=\"hero-box hero-ctas-box\">",
+      "timestamp": "2025-12-29T04:37:38.007Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 53,
+      "line_number_start": 137,
+      "line_number_end": 141,
+      "code": "  max-width: 900px;\n  margin: 0 auto;\n  display: flex;\n  flex-direction: column;\n  gap: calc(var(--grid-size) * 3);",
+      "timestamp": "2025-12-29T04:38:49.018Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 55,
+      "line_number_start": 142,
+      "line_number_end": 146,
+      "code": "  margin-bottom: var(--spacing-3xl);\n}\n\n.hero-box {\n  background-color: var(--bg-primary);",
+      "timestamp": "2025-12-29T04:38:49.018Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 57,
+      "line_number_start": 147,
+      "line_number_end": 151,
+      "code": "  border: 1px solid var(--border-color);\n  padding: calc(var(--grid-size) * 4);\n  position: relative;\n}\n",
+      "timestamp": "2025-12-29T04:38:49.018Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 59,
+      "line_number_start": 152,
+      "line_number_end": 156,
+      "code": ".hero-box::before {\n  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;",
+      "timestamp": "2025-12-29T04:38:49.018Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 61,
+      "line_number_start": 157,
+      "line_number_end": 161,
+      "code": "  width: 16px;\n  height: 16px;\n  border-top: 2px solid var(--accent-blue);\n  border-left: 2px solid var(--accent-blue);\n}",
+      "timestamp": "2025-12-29T04:38:49.018Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 63,
+      "line_number_start": 162,
+      "line_number_end": 166,
+      "code": "\n.hero-box::after {\n  content: '';\n  position: absolute;\n  bottom: 0;",
+      "timestamp": "2025-12-29T04:38:49.018Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 65,
+      "line_number_start": 167,
+      "line_number_end": 173,
+      "code": "  right: 0;\n  width: 16px;\n  height: 16px;\n  border-bottom: 2px solid var(--accent-blue);\n  border-right: 2px solid var(--accent-blue);\n}\n",
+      "timestamp": "2025-12-29T04:38:49.018Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 67,
+      "line_number_start": 182,
+      "line_number_end": 182,
+      "code": "  margin: 0;",
+      "timestamp": "2025-12-29T04:38:49.018Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 69,
+      "line_number_start": 207,
+      "line_number_end": 210,
+      "code": "  margin: 0;\n}\n\n.hero-ctas-box {",
+      "timestamp": "2025-12-29T04:38:49.018Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 62,
+      "line_number_start": 563,
+      "line_number_end": 566,
+      "code": "  .hero-content {\n    gap: var(--spacing-md);\n  }\n",
+      "timestamp": "2025-12-29T04:39:10.289Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 64,
+      "line_number_start": 567,
+      "line_number_end": 570,
+      "code": "  .hero-box {\n    padding: var(--spacing-lg);\n  }\n",
+      "timestamp": "2025-12-29T04:39:10.289Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 66,
+      "line_number_start": 579,
+      "line_number_end": 579,
+      "code": "  .hero-ctas-box {",
+      "timestamp": "2025-12-29T04:39:10.289Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 68,
+      "line_number_start": 584,
+      "line_number_end": 584,
+      "code": "  .hero-ctas-box .btn {",
+      "timestamp": "2025-12-29T04:39:10.289Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 66,
+      "line_number_start": 137,
+      "line_number_end": 137,
+      "code": "  max-width: 1000px;",
+      "timestamp": "2025-12-29T04:41:57.752Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 68,
+      "line_number_start": 157,
+      "line_number_end": 158,
+      "code": "    var(--border-color) 10%,\n    var(--border-color) 90%,",
+      "timestamp": "2025-12-29T04:41:57.752Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 70,
+      "line_number_start": 153,
+      "line_number_end": 165,
+      "code": "  width: 1px;\n  background: linear-gradient(\n    to bottom,\n    transparent,\n    var(--border-color) 10%,\n    var(--border-color) 90%,\n    transparent\n  );\n  z-index: 0;\n}\n\n.hero-box {\n  background-color: transparent;",
+      "timestamp": "2025-12-29T04:41:57.752Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 72,
+      "line_number_start": 169,
+      "line_number_end": 180,
+      "code": "  width: fit-content;\n  max-width: 100%;\n  z-index: 1;\n}\n\n.hero-box::before,\n.hero-box::after {\n  content: '';\n  position: absolute;\n  width: 8px;\n  height: 8px;\n  background-color: var(--bg-primary);",
+      "timestamp": "2025-12-29T04:41:57.752Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 74,
+      "line_number_start": 181,
+      "line_number_end": 192,
+      "code": "  border: 1px solid var(--accent-blue);\n  z-index: 2;\n}\n\n.hero-box::before {\n  top: -4px;\n  left: -4px;\n}\n\n.hero-box::after {\n  bottom: -4px;\n  right: -4px;",
+      "timestamp": "2025-12-29T04:41:57.752Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 71,
+      "line_number_start": 236,
+      "line_number_end": 237,
+      "code": "  width: auto;\n  padding: calc(var(--grid-size) * 3);",
+      "timestamp": "2025-12-29T04:42:07.853Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 72,
+      "line_number_start": 174,
+      "line_number_end": 177,
+      "code": ".hero-box::before {\n  content: '';\n  position: absolute;\n  top: -1px;",
+      "timestamp": "2025-12-29T04:42:20.014Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 74,
+      "line_number_start": 178,
+      "line_number_end": 182,
+      "code": "  left: -1px;\n  width: 20px;\n  height: 20px;\n  border-top: 2px solid var(--accent-blue);\n  border-left: 2px solid var(--accent-blue);",
+      "timestamp": "2025-12-29T04:42:20.014Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 76,
+      "line_number_start": 186,
+      "line_number_end": 193,
+      "code": "  content: '';\n  position: absolute;\n  bottom: -1px;\n  right: -1px;\n  width: 20px;\n  height: 20px;\n  border-bottom: 2px solid var(--accent-blue);\n  border-right: 2px solid var(--accent-blue);",
+      "timestamp": "2025-12-29T04:42:20.014Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 75,
+      "line_number_start": 61,
+      "line_number_end": 62,
+      "code": "    linear-gradient(rgba(62, 62, 66, 0.3) 1px, transparent 1px),\n    linear-gradient(90deg, rgba(62, 62, 66, 0.3) 1px, transparent 1px);",
+      "timestamp": "2025-12-29T04:42:30.886Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 76,
+      "line_number_start": 35,
+      "line_number_end": 41,
+      "code": "        <h1 class=\"hero-headline\">\n          <span class=\"keyword\">Understanding</span>\n          <span class=\"operator\">at the speed of</span>\n          <span class=\"string\">shipping</span><span class=\"punctuation\">.</span>\n        </h1>\n        <p class=\"hero-subheadline\">A VS Code extension that surfaces AI-generated code in reviewable segments. Stay familiar with your codebase without slowing down.</p>\n        <div class=\"hero-ctas\">",
+      "timestamp": "2025-12-29T04:43:17.565Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 77,
+      "line_number_start": 137,
+      "line_number_end": 137,
+      "code": "  max-width: 900px;",
+      "timestamp": "2025-12-29T04:43:46.638Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 79,
+      "line_number_start": 147,
+      "line_number_end": 147,
+      "code": "  margin-bottom: var(--spacing-2xl);",
+      "timestamp": "2025-12-29T04:43:46.638Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 79,
+      "line_number_start": 174,
+      "line_number_end": 180,
+      "code": "  margin-bottom: var(--spacing-2xl);\n  max-width: 700px;\n  margin-left: auto;\n  margin-right: auto;\n}\n\n.hero-ctas {",
+      "timestamp": "2025-12-29T04:43:56.623Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 81,
+      "line_number_start": 185,
+      "line_number_end": 185,
+      "code": "  margin-bottom: var(--spacing-3xl);",
+      "timestamp": "2025-12-29T04:43:56.623Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 81,
+      "line_number_start": 61,
+      "line_number_end": 62,
+      "code": "    linear-gradient(rgba(62, 62, 66, 0.15) 1px, transparent 1px),\n    linear-gradient(90deg, rgba(62, 62, 66, 0.15) 1px, transparent 1px);",
+      "timestamp": "2025-12-29T04:44:52.885Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 82,
+      "line_number_start": 542,
+      "line_number_end": 542,
+      "code": "  .hero-ctas {",
+      "timestamp": "2025-12-29T04:45:03.131Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 84,
+      "line_number_start": 547,
+      "line_number_end": 547,
+      "code": "  .btn {",
+      "timestamp": "2025-12-29T04:45:03.131Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 84,
+      "line_number_start": 142,
+      "line_number_end": 142,
+      "code": "  border: 1 px solid var(--border-color);",
+      "timestamp": "2025-12-29T04:51:20.821Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 85,
+      "line_number_start": 143,
+      "line_number_end": 145,
+      "code": "  padding: var(--spacing-lg);\n  font-family: var(--font-mono);\n  ",
+      "timestamp": "2025-12-29T04:51:58.082Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 86,
+      "line_number_start": 146,
+      "line_number_end": 146,
+      "code": "  background-color: rgba(255, 255, 255, 0.02);",
+      "timestamp": "2025-12-29T04:54:43.301Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 87,
+      "line_number_start": 141,
+      "line_number_end": 145,
+      "code": ".hero-headline::before {\n  content: '';\n  position: absolute;\n  top: -8px;\n  left: 50%;",
+      "timestamp": "2025-12-29T04:54:54.916Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 89,
+      "line_number_start": 146,
+      "line_number_end": 150,
+      "code": "  transform: translateX(-50%);\n  width: 100px;\n  height: 4px;\n  background-color: var(--accent-blue);\n}",
+      "timestamp": "2025-12-29T04:54:54.916Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 89,
+      "line_number_start": 142,
+      "line_number_end": 142,
+      "code": "  border: 1px solid var(--border-color);",
+      "timestamp": "2025-12-29T04:55:54.142Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 91,
+      "line_number_start": 153,
+      "line_number_end": 156,
+      "code": "  position: relative;\n}\n\n.hero-headline::before {",
+      "timestamp": "2025-12-29T04:55:54.142Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 93,
+      "line_number_start": 157,
+      "line_number_end": 160,
+      "code": "  content: '';\n  position: absolute;\n  top: 0;\n  left: 0;",
+      "timestamp": "2025-12-29T04:55:54.142Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 95,
+      "line_number_start": 161,
+      "line_number_end": 164,
+      "code": "  width: 60px;\n  height: 60px;\n  border-top: 2px solid var(--accent-blue);\n  border-left: 2px solid var(--accent-blue);",
+      "timestamp": "2025-12-29T04:55:54.142Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 97,
+      "line_number_start": 165,
+      "line_number_end": 168,
+      "code": "  transform: translate(-50%, -50%);\n}\n\n.hero-headline::after {",
+      "timestamp": "2025-12-29T04:55:54.142Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 99,
+      "line_number_start": 169,
+      "line_number_end": 172,
+      "code": "  content: '';\n  position: absolute;\n  bottom: 0;\n  right: 0;",
+      "timestamp": "2025-12-29T04:55:54.142Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 101,
+      "line_number_start": 173,
+      "line_number_end": 179,
+      "code": "  width: 60px;\n  height: 60px;\n  border-bottom: 2px solid var(--accent-blue);\n  border-right: 2px solid var(--accent-blue);\n  transform: translate(50%, 50%);\n}\n",
+      "timestamp": "2025-12-29T04:55:54.142Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 96,
+      "line_number_start": 142,
+      "line_number_end": 142,
+      "code": "  border: none;",
+      "timestamp": "2025-12-29T05:01:43.043Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 98,
+      "line_number_start": 158,
+      "line_number_end": 158,
+      "code": "  position: fixed;",
+      "timestamp": "2025-12-29T05:01:43.043Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 100,
+      "line_number_start": 162,
+      "line_number_end": 180,
+      "code": "  bottom: 0;\n  pointer-events: none;\n  z-index: -1;\n  background-image:\n    linear-gradient(to right, var(--accent-blue) 1px, transparent 1px),\n    linear-gradient(to right, var(--accent-blue) 1px, transparent 1px),\n    linear-gradient(to bottom, var(--accent-blue) 1px, transparent 1px),\n    linear-gradient(to bottom, var(--accent-blue) 1px, transparent 1px);\n  background-size:\n    100% 1px,\n    100% 1px,\n    1px 100%,\n    1px 100%;\n  background-position:\n    0 var(--headline-top),\n    0 var(--headline-bottom),\n    var(--headline-left) 0,\n    var(--headline-right) 0;\n  background-repeat: no-repeat;",
+      "timestamp": "2025-12-29T05:01:43.043Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 99,
+      "line_number_start": 4,
+      "line_number_end": 4,
+      "code": "  initHeadlineGrid();",
+      "timestamp": "2025-12-29T05:02:08.042Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 101,
+      "line_number_start": 14,
+      "line_number_end": 22,
+      "code": "  function updateGridLines() {\n    const rect = headline.getBoundingClientRect();\n    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;\n\n    document.documentElement.style.setProperty('--headline-top', `${rect.top + scrollTop}px`);\n    document.documentElement.style.setProperty('--headline-bottom', `${rect.bottom + scrollTop}px`);\n    document.documentElement.style.setProperty('--headline-left', `${rect.left}px`);\n    document.documentElement.style.setProperty('--headline-right', `${rect.right}px`);\n  }",
+      "timestamp": "2025-12-29T05:02:08.043Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 103,
+      "line_number_start": 10,
+      "line_number_end": 27,
+      "code": "function initHeadlineGrid(): void {\n  const headline = document.querySelector('.hero-headline') as HTMLElement;\n  if (!headline) return;\n\n  function updateGridLines() {\n    const rect = headline.getBoundingClientRect();\n    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;\n\n    document.documentElement.style.setProperty('--headline-top', `${rect.top + scrollTop}px`);\n    document.documentElement.style.setProperty('--headline-bottom', `${rect.bottom + scrollTop}px`);\n    document.documentElement.style.setProperty('--headline-left', `${rect.left}px`);\n    document.documentElement.style.setProperty('--headline-right', `${rect.right}px`);\n  }\n\n  updateGridLines();\n  window.addEventListener('resize', updateGridLines);\n  window.addEventListener('scroll', updateGridLines);\n}",
+      "timestamp": "2025-12-29T05:02:08.043Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 102,
+      "line_number_start": 161,
+      "line_number_end": 176,
+      "code": "  width: 100vw;\n  height: 100vh;\n  pointer-events: none;\n  z-index: 1;\n  background:\n    linear-gradient(to right, var(--accent-blue) 1px, transparent 1px) 0 var(--headline-top, 200px) / 100% 1px no-repeat,\n    linear-gradient(to right, var(--accent-blue) 1px, transparent 1px) 0 var(--headline-bottom, 300px) / 100% 1px no-repeat,\n    linear-gradient(to bottom, var(--accent-blue) 1px, transparent 1px) var(--headline-left, 200px) 0 / 1px 100% no-repeat,\n    linear-gradient(to bottom, var(--accent-blue) 1px, transparent 1px) var(--headline-right, 800px) 0 / 1px 100% no-repeat;\n}\n\n.hero-headline > * {\n  position: relative;\n  z-index: 2;\n}\n",
+      "timestamp": "2025-12-29T05:03:50.141Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 103,
+      "line_number_start": 35,
+      "line_number_end": 40,
+      "code": "        <div class=\"grid-lines\">\n          <div class=\"grid-line grid-line-top\"></div>\n          <div class=\"grid-line grid-line-bottom\"></div>\n          <div class=\"grid-line grid-line-left\"></div>\n          <div class=\"grid-line grid-line-right\"></div>\n        </div>",
+      "timestamp": "2025-12-29T05:04:52.862Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 104,
+      "line_number_start": 156,
+      "line_number_end": 156,
+      "code": ".grid-lines {",
+      "timestamp": "2025-12-29T05:05:19.442Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 106,
+      "line_number_start": 163,
+      "line_number_end": 169,
+      "code": "  z-index: 10;\n}\n\n.grid-line {\n  position: absolute;\n  background-color: var(--accent-blue);\n}",
+      "timestamp": "2025-12-29T05:05:19.443Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 108,
+      "line_number_start": 170,
+      "line_number_end": 176,
+      "code": "\n.grid-line-top {\n  top: var(--headline-top, 200px);\n  left: 0;\n  right: 0;\n  height: 1px;\n}",
+      "timestamp": "2025-12-29T05:05:19.443Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 110,
+      "line_number_start": 177,
+      "line_number_end": 183,
+      "code": "\n.grid-line-bottom {\n  top: var(--headline-bottom, 300px);\n  left: 0;\n  right: 0;\n  height: 1px;\n}",
+      "timestamp": "2025-12-29T05:05:19.443Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 112,
+      "line_number_start": 184,
+      "line_number_end": 190,
+      "code": "\n.grid-line-left {\n  top: 0;\n  left: var(--headline-left, 200px);\n  bottom: 0;\n  width: 1px;\n}",
+      "timestamp": "2025-12-29T05:05:19.443Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 114,
+      "line_number_start": 191,
+      "line_number_end": 198,
+      "code": "\n.grid-line-right {\n  top: 0;\n  left: var(--headline-right, 800px);\n  bottom: 0;\n  width: 1px;\n}\n",
+      "timestamp": "2025-12-29T05:05:19.443Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 110,
+      "line_number_start": 142,
+      "line_number_end": 146,
+      "code": "  border: 1px solid var(--border-color);\n  padding: var(--spacing-lg);\n  font-family: var(--font-mono);\n  background-color: rgba(30, 30, 30, 0.8);\n  backdrop-filter: blur(10px);",
+      "timestamp": "2025-12-29T05:07:53.041Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 112,
+      "line_number_start": 158,
+      "line_number_end": 164,
+      "code": "  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  pointer-events: none;\n  z-index: 1;",
+      "timestamp": "2025-12-29T05:07:53.041Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 114,
+      "line_number_start": 169,
+      "line_number_end": 169,
+      "code": "  background-color: #666666;",
+      "timestamp": "2025-12-29T05:07:53.041Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 113,
+      "line_number_start": 97,
+      "line_number_end": 97,
+      "code": "  padding: 0;",
+      "timestamp": "2025-12-29T05:10:48.753Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 115,
+      "line_number_start": 106,
+      "line_number_end": 114,
+      "code": "  position: absolute;\n  left: var(--headline-left, 200px);\n}\n\n.nav {\n  position: absolute;\n  right: calc(100vw - var(--headline-right, 800px));\n}\n",
+      "timestamp": "2025-12-29T05:10:48.754Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 115,
+      "line_number_start": 119,
+      "line_number_end": 120,
+      "code": "  position: absolute;\n  right: calc(100vw - var(--headline-right, 800px));",
+      "timestamp": "2025-12-29T05:11:59.484Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 116,
+      "line_number_start": 150,
+      "line_number_end": 151,
+      "code": "  background-color: rgba(30, 30, 30, 0.85);\n  backdrop-filter: blur(12px);",
+      "timestamp": "2025-12-29T05:14:02.624Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 118,
+      "line_number_start": 160,
+      "line_number_end": 163,
+      "code": "  box-shadow:\n    0 8px 32px rgba(0, 0, 0, 0.4),\n    0 2px 8px rgba(0, 0, 0, 0.3);\n  transform: translateZ(0);",
+      "timestamp": "2025-12-29T05:14:02.624Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 120,
+      "line_number_start": 178,
+      "line_number_end": 178,
+      "code": "  background-color: rgba(62, 62, 66, 0.6);",
+      "timestamp": "2025-12-29T05:14:02.624Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 119,
+      "line_number_start": 346,
+      "line_number_end": 349,
+      "code": "  font-size: 1.125rem;\n  line-height: 1.8;\n  color: var(--text-primary);\n  text-align: justify;",
+      "timestamp": "2025-12-29T05:16:53.772Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 120,
+      "line_number_start": 167,
+      "line_number_end": 171,
+      "code": "  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;",
+      "timestamp": "2025-12-29T05:24:42.451Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 121,
+      "line_number_start": 73,
+      "line_number_end": 101,
+      "code": "      <div class=\"features-carousel\">\n        <div class=\"features-grid-lines\">\n          <div class=\"grid-line grid-line-features-top\"></div>\n          <div class=\"grid-line grid-line-features-bottom\"></div>\n        </div>\n        <div class=\"feature-box\">\n          <div class=\"feature-content\">\n            <div class=\"feature-card active\" data-feature=\"0\">\n              <h3 class=\"feature-title\">Segments</h3>\n              <p class=\"feature-description\">AI-generated code is parsed into reviewable chunks. Step through them one at a time—each click advances to the next segment and jumps your cursor to the relevant lines.</p>\n            </div>\n            <div class=\"feature-card\" data-feature=\"1\">\n              <h3 class=\"feature-title\">BYOK Explanations</h3>\n              <p class=\"feature-description\">Send any segment to an AI for an isolated explanation of what the code actually does—independent of what you asked for. Bring your own API key.</p>\n            </div>\n            <div class=\"feature-card\" data-feature=\"2\">\n              <h3 class=\"feature-title\">Context Markers</h3>\n              <p class=\"feature-description\">Leave notes on segments for yourself. Mark complex logic. Leave breadcrumbs for when you return to this code later.</p>\n            </div>\n            <div class=\"feature-card\" data-feature=\"3\">\n              <h3 class=\"feature-title\">Complexity Indicators</h3>\n              <p class=\"feature-description\">A lightweight cyclomatic complexity score flags functions with denser logic. Know where the risk lives before you commit.</p>\n            </div>\n          </div>\n          <div class=\"feature-nav\">\n            <button class=\"feature-nav-btn feature-nav-prev\" aria-label=\"Previous feature\">←</button>\n            <span class=\"feature-counter\"><span class=\"feature-current\">1</span> / 4</span>\n            <button class=\"feature-nav-btn feature-nav-next\" aria-label=\"Next feature\">→</button>\n          </div>",
+      "timestamp": "2025-12-29T05:25:22.784Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 122,
+      "line_number_start": 384,
+      "line_number_end": 384,
+      "code": ".features-carousel {",
+      "timestamp": "2025-12-29T05:26:38.826Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 124,
+      "line_number_start": 388,
+      "line_number_end": 388,
+      "code": ".features-grid-lines {",
+      "timestamp": "2025-12-29T05:26:38.826Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 126,
+      "line_number_start": 392,
+      "line_number_end": 395,
+      "code": "  width: 100%;\n  height: 100%;\n  pointer-events: none;\n  z-index: 1;",
+      "timestamp": "2025-12-29T05:26:38.828Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 128,
+      "line_number_start": 396,
+      "line_number_end": 399,
+      "code": "}\n\n.grid-line-features-top {\n  top: var(--features-top, 0);",
+      "timestamp": "2025-12-29T05:26:38.828Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 130,
+      "line_number_start": 400,
+      "line_number_end": 403,
+      "code": "  left: 0;\n  right: 0;\n  height: 1px;\n  position: absolute;",
+      "timestamp": "2025-12-29T05:26:38.828Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 132,
+      "line_number_start": 404,
+      "line_number_end": 407,
+      "code": "  background-color: rgba(62, 62, 66, 0.6);\n}\n\n.grid-line-features-bottom {",
+      "timestamp": "2025-12-29T05:26:38.828Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 134,
+      "line_number_start": 408,
+      "line_number_end": 411,
+      "code": "  top: var(--features-bottom, 300px);\n  left: 0;\n  right: 0;\n  height: 1px;",
+      "timestamp": "2025-12-29T05:26:38.828Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 136,
+      "line_number_start": 412,
+      "line_number_end": 415,
+      "code": "  position: absolute;\n  background-color: rgba(62, 62, 66, 0.6);\n}\n",
+      "timestamp": "2025-12-29T05:26:38.828Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 138,
+      "line_number_start": 416,
+      "line_number_end": 419,
+      "code": ".feature-box {\n  border: 1px solid var(--border-color);\n  background-color: rgba(30, 30, 30, 0.85);\n  backdrop-filter: blur(12px);",
+      "timestamp": "2025-12-29T05:26:38.828Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 140,
+      "line_number_start": 420,
+      "line_number_end": 423,
+      "code": "  padding: var(--spacing-2xl);\n  position: relative;\n  box-shadow:\n    0 8px 32px rgba(0, 0, 0, 0.4),",
+      "timestamp": "2025-12-29T05:26:38.828Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 142,
+      "line_number_start": 424,
+      "line_number_end": 427,
+      "code": "    0 2px 8px rgba(0, 0, 0, 0.3);\n}\n\n.feature-content {",
+      "timestamp": "2025-12-29T05:26:38.828Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 144,
+      "line_number_start": 428,
+      "line_number_end": 431,
+      "code": "  position: relative;\n  min-height: 200px;\n}\n",
+      "timestamp": "2025-12-29T05:26:38.828Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 146,
+      "line_number_start": 432,
+      "line_number_end": 435,
+      "code": ".feature-card {\n  opacity: 0;\n  display: none;\n  transition: opacity 0.3s ease;",
+      "timestamp": "2025-12-29T05:26:38.828Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 148,
+      "line_number_start": 436,
+      "line_number_end": 439,
+      "code": "}\n\n.feature-card.active {\n  opacity: 1;",
+      "timestamp": "2025-12-29T05:26:38.828Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 150,
+      "line_number_start": 440,
+      "line_number_end": 443,
+      "code": "  display: block;\n}\n\n.feature-nav {",
+      "timestamp": "2025-12-29T05:26:38.828Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 152,
+      "line_number_start": 444,
+      "line_number_end": 447,
+      "code": "  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: var(--spacing-lg);",
+      "timestamp": "2025-12-29T05:26:38.828Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 154,
+      "line_number_start": 448,
+      "line_number_end": 451,
+      "code": "  margin-top: var(--spacing-xl);\n}\n\n.feature-nav-btn {",
+      "timestamp": "2025-12-29T05:26:38.828Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 156,
+      "line_number_start": 452,
+      "line_number_end": 455,
+      "code": "  background: none;\n  border: 1px solid var(--border-color);\n  color: var(--text-primary);\n  font-family: var(--font-mono);",
+      "timestamp": "2025-12-29T05:26:38.828Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 158,
+      "line_number_start": 456,
+      "line_number_end": 459,
+      "code": "  font-size: 1.25rem;\n  width: 40px;\n  height: 40px;\n  display: flex;",
+      "timestamp": "2025-12-29T05:26:38.828Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 160,
+      "line_number_start": 460,
+      "line_number_end": 463,
+      "code": "  align-items: center;\n  justify-content: center;\n  cursor: pointer;\n  transition: all 0.2s ease;",
+      "timestamp": "2025-12-29T05:26:38.828Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 162,
+      "line_number_start": 464,
+      "line_number_end": 480,
+      "code": "}\n\n.feature-nav-btn:hover {\n  border-color: var(--accent-blue);\n  color: var(--accent-blue);\n}\n\n.feature-counter {\n  font-family: var(--font-mono);\n  font-size: 0.875rem;\n  color: var(--text-secondary);\n}\n\n.feature-current {\n  color: var(--text-bright);\n}\n",
+      "timestamp": "2025-12-29T05:26:38.828Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 143,
+      "line_number_start": 5,
+      "line_number_end": 5,
+      "code": "  initFeaturesCarousel();",
+      "timestamp": "2025-12-29T05:26:54.218Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 144,
+      "line_number_start": 45,
+      "line_number_end": 47,
+      "code": "    featureCards.forEach((card, i) => {\n      card.classList.toggle('active', i === index);\n    });",
+      "timestamp": "2025-12-29T05:27:40.517Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 146,
+      "line_number_start": 44,
+      "line_number_end": 50,
+      "code": "  function updateFeature(index: number) {\n    featureCards.forEach((card, i) => {\n      card.classList.toggle('active', i === index);\n    });\n    currentSpan.textContent = (index + 1).toString();\n    currentIndex = index;\n  }",
+      "timestamp": "2025-12-29T05:27:40.517Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 148,
+      "line_number_start": 52,
+      "line_number_end": 58,
+      "code": "  function updateGridLines() {\n    const rect = featureBox.getBoundingClientRect();\n    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;\n\n    document.documentElement.style.setProperty('--features-top', `${rect.top + scrollTop}px`);\n    document.documentElement.style.setProperty('--features-bottom', `${rect.bottom + scrollTop}px`);\n  }",
+      "timestamp": "2025-12-29T05:27:40.517Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 150,
+      "line_number_start": 45,
+      "line_number_end": 47,
+      "code": "    featureCards.forEach((card, i) => {\n      card.classList.toggle('active', i === index);\n    });",
+      "timestamp": "2025-12-29T05:27:40.517Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 152,
+      "line_number_start": 45,
+      "line_number_end": 47,
+      "code": "    featureCards.forEach((card, i) => {\n      card.classList.toggle('active', i === index);\n    });",
+      "timestamp": "2025-12-29T05:27:40.517Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 154,
+      "line_number_start": 33,
+      "line_number_end": 74,
+      "code": "function initFeaturesCarousel(): void {\n  const featureCards = document.querySelectorAll('.feature-card') as NodeListOf<HTMLElement>;\n  const prevBtn = document.querySelector('.feature-nav-prev') as HTMLButtonElement;\n  const nextBtn = document.querySelector('.feature-nav-next') as HTMLButtonElement;\n  const currentSpan = document.querySelector('.feature-current') as HTMLSpanElement;\n  const featureBox = document.querySelector('.feature-box') as HTMLElement;\n\n  if (!featureCards.length || !prevBtn || !nextBtn || !currentSpan || !featureBox) return;\n\n  let currentIndex = 0;\n\n  function updateFeature(index: number) {\n    featureCards.forEach((card, i) => {\n      card.classList.toggle('active', i === index);\n    });\n    currentSpan.textContent = (index + 1).toString();\n    currentIndex = index;\n  }\n\n  function updateGridLines() {\n    const rect = featureBox.getBoundingClientRect();\n    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;\n\n    document.documentElement.style.setProperty('--features-top', `${rect.top + scrollTop}px`);\n    document.documentElement.style.setProperty('--features-bottom', `${rect.bottom + scrollTop}px`);\n  }\n\n  prevBtn.addEventListener('click', () => {\n    const newIndex = currentIndex === 0 ? featureCards.length - 1 : currentIndex - 1;\n    updateFeature(newIndex);\n  });\n\n  nextBtn.addEventListener('click', () => {\n    const newIndex = currentIndex === featureCards.length - 1 ? 0 : currentIndex + 1;\n    updateFeature(newIndex);\n  });\n\n  // Update grid lines on load, resize, and scroll\n  updateGridLines();\n  window.addEventListener('resize', updateGridLines);\n  window.addEventListener('scroll', updateGridLines);\n}",
+      "timestamp": "2025-12-29T05:27:40.517Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 150,
+      "line_number_start": 167,
+      "line_number_end": 167,
+      "code": "  position: absolute;",
+      "timestamp": "2025-12-29T05:33:00.385Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 152,
+      "line_number_start": 171,
+      "line_number_end": 171,
+      "code": "  height: 100%;",
+      "timestamp": "2025-12-29T05:33:00.385Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 152,
+      "line_number_start": 425,
+      "line_number_end": 426,
+      "code": "  max-width: calc(var(--headline-right, 800px) - var(--headline-left, 200px));\n  margin: 0 auto;",
+      "timestamp": "2025-12-29T05:34:50.467Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 153,
+      "line_number_start": 389,
+      "line_number_end": 393,
+      "code": "  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100vw;\n  height: 100vh;",
+      "timestamp": "2025-12-29T05:35:30.205Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 154,
+      "line_number_start": 80,
+      "line_number_end": 113,
+      "code": "              <div class=\"feature-visual\">\n                <img src=\"/resources/voight-segments.gif\" alt=\"Segments feature demo\" class=\"feature-gif\">\n              </div>\n              <div class=\"feature-text\">\n                <h3 class=\"feature-title\">Segments</h3>\n                <p class=\"feature-description\">AI-generated code is parsed into reviewable chunks. Step through them one at a time—each click advances to the next segment and jumps your cursor to the relevant lines.</p>\n              </div>\n            </div>\n            <div class=\"feature-card\" data-feature=\"1\">\n              <div class=\"feature-visual\">\n                <img src=\"/resources/voight-explanations.gif\" alt=\"BYOK Explanations feature demo\" class=\"feature-gif\">\n              </div>\n              <div class=\"feature-text\">\n                <h3 class=\"feature-title\">BYOK Explanations</h3>\n                <p class=\"feature-description\">Send any segment to an AI for an isolated explanation of what the code actually does—independent of what you asked for. Bring your own API key.</p>\n              </div>\n            </div>\n            <div class=\"feature-card\" data-feature=\"2\">\n              <div class=\"feature-visual\">\n                <img src=\"/resources/voight-context-markers.gif\" alt=\"Context Markers feature demo\" class=\"feature-gif\">\n              </div>\n              <div class=\"feature-text\">\n                <h3 class=\"feature-title\">Context Markers</h3>\n                <p class=\"feature-description\">Leave notes on segments for yourself. Mark complex logic. Leave breadcrumbs for when you return to this code later.</p>\n              </div>\n            </div>\n            <div class=\"feature-card\" data-feature=\"3\">\n              <div class=\"feature-visual\">\n                <img src=\"/resources/voight-complexity.gif\" alt=\"Complexity Indicators feature demo\" class=\"feature-gif\">\n              </div>\n              <div class=\"feature-text\">\n                <h3 class=\"feature-title\">Complexity Indicators</h3>\n                <p class=\"feature-description\">A lightweight cyclomatic complexity score flags functions with denser logic. Know where the risk lives before you commit.</p>\n              </div>",
+      "timestamp": "2025-12-29T08:08:32.389Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 155,
+      "line_number_start": 442,
+      "line_number_end": 467,
+      "code": "  display: flex;\n  gap: var(--spacing-xl);\n  align-items: center;\n}\n\n.feature-visual {\n  flex: 1;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  overflow: hidden;\n}\n\n.feature-gif {\n  width: 100%;\n  height: auto;\n  border-radius: 4px;\n  border: 1px solid var(--border-color);\n}\n\n.feature-text {\n  flex: 1;\n  display: flex;\n  flex-direction: column;\n}\n",
+      "timestamp": "2025-12-29T08:08:47.522Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 156,
+      "line_number_start": 680,
+      "line_number_end": 688,
+      "code": "  .feature-card.active {\n    flex-direction: column;\n    gap: var(--spacing-lg);\n  }\n\n  .feature-visual {\n    width: 100%;\n  }\n",
+      "timestamp": "2025-12-29T08:08:57.596Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 157,
+      "line_number_start": 448,
+      "line_number_end": 448,
+      "code": "  flex: 2;",
+      "timestamp": "2025-12-29T08:22:35.316Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 159,
+      "line_number_start": 468,
+      "line_number_end": 471,
+      "code": ".feature-nav-top {\n  display: flex;\n  align-items: center;\n  justify-content: center;",
+      "timestamp": "2025-12-29T08:22:35.316Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 161,
+      "line_number_start": 472,
+      "line_number_end": 475,
+      "code": "  gap: var(--spacing-lg);\n  margin-bottom: var(--spacing-lg);\n}\n",
+      "timestamp": "2025-12-29T08:22:35.316Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 160,
+      "line_number_start": 78,
+      "line_number_end": 87,
+      "code": "          <button class=\"feature-arrow feature-arrow-left feature-nav-prev\" aria-label=\"Previous feature\">\n            <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n              <path d=\"M15 18L9 12L15 6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n            </svg>\n          </button>\n          <button class=\"feature-arrow feature-arrow-right feature-nav-next\" aria-label=\"Next feature\">\n            <svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n              <path d=\"M9 18L15 12L9 6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n            </svg>\n          </button>",
+      "timestamp": "2025-12-29T08:25:24.942Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 161,
+      "line_number_start": 429,
+      "line_number_end": 431,
+      "code": ".feature-arrow {\n  position: absolute;\n  top: 50%;",
+      "timestamp": "2025-12-29T08:26:30.501Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 163,
+      "line_number_start": 432,
+      "line_number_end": 434,
+      "code": "  transform: translateY(-50%);\n  background: rgba(30, 30, 30, 0.9);\n  border: 1px solid var(--border-color);",
+      "timestamp": "2025-12-29T08:26:30.501Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 165,
+      "line_number_start": 435,
+      "line_number_end": 437,
+      "code": "  color: var(--text-secondary);\n  width: 48px;\n  height: 48px;",
+      "timestamp": "2025-12-29T08:26:30.501Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 167,
+      "line_number_start": 438,
+      "line_number_end": 440,
+      "code": "  display: flex;\n  align-items: center;\n  justify-content: center;",
+      "timestamp": "2025-12-29T08:26:30.501Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 169,
+      "line_number_start": 441,
+      "line_number_end": 443,
+      "code": "  cursor: pointer;\n  transition: all 0.3s ease;\n  z-index: 10;",
+      "timestamp": "2025-12-29T08:26:30.501Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 171,
+      "line_number_start": 444,
+      "line_number_end": 446,
+      "code": "  backdrop-filter: blur(8px);\n}\n",
+      "timestamp": "2025-12-29T08:26:30.501Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 173,
+      "line_number_start": 447,
+      "line_number_end": 449,
+      "code": ".feature-arrow:hover {\n  background: rgba(45, 45, 48, 0.95);\n  border-color: var(--accent-blue);",
+      "timestamp": "2025-12-29T08:26:30.501Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 175,
+      "line_number_start": 450,
+      "line_number_end": 452,
+      "code": "  color: var(--accent-blue);\n  transform: translateY(-50%) scale(1.1);\n}",
+      "timestamp": "2025-12-29T08:26:30.501Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 177,
+      "line_number_start": 453,
+      "line_number_end": 461,
+      "code": "\n.feature-arrow-left {\n  left: -24px;\n}\n\n.feature-arrow-right {\n  right: -24px;\n}\n",
+      "timestamp": "2025-12-29T08:26:30.501Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 170,
+      "line_number_start": 465,
+      "line_number_end": 465,
+      "code": "  overflow: hidden;",
+      "timestamp": "2025-12-29T08:27:18.721Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 172,
+      "line_number_start": 469,
+      "line_number_end": 476,
+      "code": "  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  opacity: 0;\n  transform: translateX(100%);\n  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);\n  pointer-events: none;",
+      "timestamp": "2025-12-29T08:27:18.721Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 174,
+      "line_number_start": 480,
+      "line_number_end": 482,
+      "code": "  position: relative;\n  opacity: 1;\n  transform: translateX(0);",
+      "timestamp": "2025-12-29T08:27:18.721Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 176,
+      "line_number_start": 486,
+      "line_number_end": 491,
+      "code": "  pointer-events: auto;\n}\n\n.feature-card.slide-out-left {\n  transform: translateX(-100%);\n  opacity: 0;",
+      "timestamp": "2025-12-29T08:27:18.721Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 178,
+      "line_number_start": 492,
+      "line_number_end": 498,
+      "code": "}\n\n.feature-card.slide-out-right {\n  transform: translateX(100%);\n  opacity: 0;\n}\n",
+      "timestamp": "2025-12-29T08:27:18.721Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 175,
+      "line_number_start": 567,
+      "line_number_end": 567,
+      "code": "  font-size: 1.25rem;",
+      "timestamp": "2025-12-29T08:28:05.942Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 177,
+      "line_number_start": 572,
+      "line_number_end": 572,
+      "code": "  text-transform: uppercase;",
+      "timestamp": "2025-12-29T08:28:05.942Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 179,
+      "line_number_start": 576,
+      "line_number_end": 578,
+      "code": "  font-size: 1rem;\n  line-height: 1.7;\n  color: var(--text-primary);",
+      "timestamp": "2025-12-29T08:28:05.942Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 178,
+      "line_number_start": 60,
+      "line_number_end": 68,
+      "code": "    setTimeout(() => {\n      newCard.classList.add('active');\n\n      // Clean up after animation\n      setTimeout(() => {\n        currentCard.classList.remove('slide-out-left', 'slide-out-right');\n        isAnimating = false;\n      }, 500);\n    }, 50);",
+      "timestamp": "2025-12-29T08:28:44.487Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 180,
+      "line_number_start": 60,
+      "line_number_end": 68,
+      "code": "    setTimeout(() => {\n      newCard.classList.add('active');\n\n      // Clean up after animation\n      setTimeout(() => {\n        currentCard.classList.remove('slide-out-left', 'slide-out-right');\n        isAnimating = false;\n      }, 500);\n    }, 50);",
+      "timestamp": "2025-12-29T08:28:44.487Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 182,
+      "line_number_start": 59,
+      "line_number_end": 70,
+      "code": "    // Wait a tick for the transform to be applied\n    setTimeout(() => {\n      newCard.classList.add('active');\n\n      // Clean up after animation\n      setTimeout(() => {\n        currentCard.classList.remove('slide-out-left', 'slide-out-right');\n        isAnimating = false;\n      }, 500);\n    }, 50);\n\n    currentIndex = newIndex;",
+      "timestamp": "2025-12-29T08:28:44.487Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 184,
+      "line_number_start": 83,
+      "line_number_end": 83,
+      "code": "    updateFeature(newIndex, 'right');",
+      "timestamp": "2025-12-29T08:28:44.487Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 186,
+      "line_number_start": 88,
+      "line_number_end": 88,
+      "code": "    updateFeature(newIndex, 'left');",
+      "timestamp": "2025-12-29T08:28:44.487Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 183,
+      "line_number_start": 747,
+      "line_number_end": 767,
+      "code": "  .feature-arrow {\n    width: 40px;\n    height: 40px;\n  }\n\n  .feature-arrow-left {\n    left: -20px;\n  }\n\n  .feature-arrow-right {\n    right: -20px;\n  }\n\n  .feature-title {\n    font-size: 1rem;\n  }\n\n  .feature-description {\n    font-size: 0.9375rem;\n  }\n",
+      "timestamp": "2025-12-29T08:28:54.818Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 184,
+      "line_number_start": 464,
+      "line_number_end": 464,
+      "code": "  min-height: 300px;",
+      "timestamp": "2025-12-29T08:49:24.146Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 186,
+      "line_number_start": 468,
+      "line_number_end": 470,
+      "code": "  display: none;\n  opacity: 0;\n  transition: opacity 0.4s ease-in-out;",
+      "timestamp": "2025-12-29T08:49:24.146Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 188,
+      "line_number_start": 477,
+      "line_number_end": 482,
+      "code": "  opacity: 1;\n  animation: slideIn 0.4s ease-out;\n}\n\n@keyframes slideIn {\n  from {",
+      "timestamp": "2025-12-29T08:49:24.146Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 190,
+      "line_number_start": 483,
+      "line_number_end": 489,
+      "code": "    opacity: 0;\n    transform: translateX(30px);\n  }\n  to {\n    opacity: 1;\n    transform: translateX(0);\n  }",
+      "timestamp": "2025-12-29T08:49:24.146Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 188,
+      "line_number_start": 44,
+      "line_number_end": 44,
+      "code": "  function updateFeature(newIndex: number) {",
+      "timestamp": "2025-12-29T08:49:45.501Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 190,
+      "line_number_start": 48,
+      "line_number_end": 59,
+      "code": "    // Remove active class from current card\n    featureCards[currentIndex].classList.remove('active');\n\n    // Add active class to new card\n    featureCards[newIndex].classList.add('active');\n\n    currentIndex = newIndex;\n\n    // Allow next animation after transition completes\n    setTimeout(() => {\n      isAnimating = false;\n    }, 400);",
+      "timestamp": "2025-12-29T08:49:45.501Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 192,
+      "line_number_start": 72,
+      "line_number_end": 72,
+      "code": "    updateFeature(newIndex);",
+      "timestamp": "2025-12-29T08:49:45.501Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 194,
+      "line_number_start": 77,
+      "line_number_end": 77,
+      "code": "    updateFeature(newIndex);",
+      "timestamp": "2025-12-29T08:49:45.501Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 192,
+      "line_number_start": 134,
+      "line_number_end": 136,
+      "code": "      <div class=\"how-wrapper\">\n        <h2 class=\"how-label\">How It Works</h2>\n        <p class=\"how-text\">Voight detects AI by its velocity signature—bursts of code faster than human typing. It uses diff algorithms to capture these injections, parses them against function boundaries into discrete segments, and evaluates control flow to flag complexity. Entirely read-only: no modification, no commit blocking. Just organized visibility.</p>",
+      "timestamp": "2025-12-29T09:31:04.242Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 193,
+      "line_number_start": 580,
+      "line_number_end": 608,
+      "code": "  position: relative;\n}\n\n.how-wrapper {\n  max-width: 900px;\n  margin: 0 auto;\n  display: grid;\n  grid-template-columns: 200px 1fr;\n  gap: var(--spacing-2xl);\n  align-items: start;\n}\n\n.how-label {\n  font-size: 0.75rem;\n  font-weight: 600;\n  letter-spacing: 0.1em;\n  text-transform: uppercase;\n  color: var(--accent-blue);\n  padding-top: 0.25rem;\n  position: sticky;\n  top: calc(var(--header-height) + var(--spacing-md));\n}\n\n.how-text {\n  font-size: 1rem;\n  line-height: 1.8;\n  color: var(--text-primary);\n  border-left: 2px solid var(--border-color);\n  padding-left: var(--spacing-lg);",
+      "timestamp": "2025-12-29T09:31:24.082Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 194,
+      "line_number_start": 775,
+      "line_number_end": 779,
+      "code": "  .how-wrapper {\n    grid-template-columns: 1fr;\n    gap: var(--spacing-md);\n  }\n",
+      "timestamp": "2025-12-29T09:31:35.388Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 196,
+      "line_number_start": 780,
+      "line_number_end": 784,
+      "code": "  .how-label {\n    position: static;\n    padding-top: 0;\n    padding-bottom: var(--spacing-sm);\n    border-bottom: 1px solid var(--border-color);",
+      "timestamp": "2025-12-29T09:31:35.388Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 198,
+      "line_number_start": 785,
+      "line_number_end": 791,
+      "code": "  }\n\n  .how-text {\n    border-left: none;\n    padding-left: 0;\n  }\n",
+      "timestamp": "2025-12-29T09:31:35.388Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 197,
+      "line_number_start": 148,
+      "line_number_end": 148,
+      "code": "  const animateElements = document.querySelectorAll('.feature-card, .context-content, .how-wrapper, .install-content');",
+      "timestamp": "2025-12-29T09:31:45.317Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 198,
+      "line_number_start": 134,
+      "line_number_end": 137,
+      "code": "      <div class=\"how-grid-lines\">\n        <div class=\"grid-line grid-line-left\"></div>\n        <div class=\"grid-line grid-line-right\"></div>\n      </div>",
+      "timestamp": "2025-12-29T09:34:52.526Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 199,
+      "line_number_start": 583,
+      "line_number_end": 588,
+      "code": ".how-grid-lines {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: 0;\n  width: 100vw;",
+      "timestamp": "2025-12-29T09:35:18.641Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 201,
+      "line_number_start": 589,
+      "line_number_end": 594,
+      "code": "  pointer-events: none;\n  z-index: 1;\n}\n\n.how-grid-lines .grid-line-left {\n  position: absolute;",
+      "timestamp": "2025-12-29T09:35:18.641Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 203,
+      "line_number_start": 595,
+      "line_number_end": 600,
+      "code": "  top: 0;\n  bottom: 0;\n  left: var(--headline-left, 200px);\n  width: 1px;\n  background-color: rgba(62, 62, 66, 0.6);\n}",
+      "timestamp": "2025-12-29T09:35:18.641Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 205,
+      "line_number_start": 601,
+      "line_number_end": 606,
+      "code": "\n.how-grid-lines .grid-line-right {\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  left: var(--headline-right, 800px);",
+      "timestamp": "2025-12-29T09:35:18.641Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 207,
+      "line_number_start": 607,
+      "line_number_end": 612,
+      "code": "  width: 1px;\n  background-color: rgba(62, 62, 66, 0.6);\n}\n\n.how-wrapper {\n  max-width: calc(var(--headline-right, 800px) - var(--headline-left, 200px));",
+      "timestamp": "2025-12-29T09:35:18.641Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 209,
+      "line_number_start": 613,
+      "line_number_end": 620,
+      "code": "  margin: 0 auto;\n  padding: var(--spacing-2xl);\n  display: grid;\n  grid-template-columns: 180px 1fr;\n  gap: var(--spacing-2xl);\n  align-items: start;\n  position: relative;\n  z-index: 2;",
+      "timestamp": "2025-12-29T09:35:18.641Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 211,
+      "line_number_start": 624,
+      "line_number_end": 624,
+      "code": "  font-size: 0.875rem;",
+      "timestamp": "2025-12-29T09:35:18.641Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 206,
+      "line_number_start": 651,
+      "line_number_end": 651,
+      "code": "  overflow: hidden;",
+      "timestamp": "2025-12-29T09:44:50.382Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 208,
+      "line_number_start": 657,
+      "line_number_end": 659,
+      "code": "  top: 0;\n  left: 0;\n  right: 0;",
+      "timestamp": "2025-12-29T09:44:50.383Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 210,
+      "line_number_start": 660,
+      "line_number_end": 662,
+      "code": "  bottom: 0;\n  padding: 2px;\n  background: linear-gradient(90deg,",
+      "timestamp": "2025-12-29T09:44:50.383Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 212,
+      "line_number_start": 663,
+      "line_number_end": 665,
+      "code": "    transparent 0%,\n    transparent 20%,\n    var(--accent-blue) 50%,",
+      "timestamp": "2025-12-29T09:44:50.383Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 214,
+      "line_number_start": 666,
+      "line_number_end": 668,
+      "code": "    transparent 80%,\n    transparent 100%\n  );",
+      "timestamp": "2025-12-29T09:44:50.383Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 216,
+      "line_number_start": 669,
+      "line_number_end": 671,
+      "code": "  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);\n  -webkit-mask-composite: xor;\n  mask-composite: exclude;",
+      "timestamp": "2025-12-29T09:44:50.383Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 218,
+      "line_number_start": 672,
+      "line_number_end": 674,
+      "code": "  pointer-events: none;\n  animation: borderMove 4s linear infinite;\n}",
+      "timestamp": "2025-12-29T09:44:50.383Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 220,
+      "line_number_start": 675,
+      "line_number_end": 677,
+      "code": "\n@keyframes borderMove {\n  0% {",
+      "timestamp": "2025-12-29T09:44:50.383Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 222,
+      "line_number_start": 678,
+      "line_number_end": 680,
+      "code": "    transform: translate(-100%, -100%) rotate(0deg);\n  }\n  25% {",
+      "timestamp": "2025-12-29T09:44:50.383Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 224,
+      "line_number_start": 681,
+      "line_number_end": 683,
+      "code": "    transform: translate(0%, -100%) rotate(0deg);\n  }\n  50% {",
+      "timestamp": "2025-12-29T09:44:50.383Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 226,
+      "line_number_start": 684,
+      "line_number_end": 693,
+      "code": "    transform: translate(0%, 0%) rotate(0deg);\n  }\n  75% {\n    transform: translate(-100%, 0%) rotate(0deg);\n  }\n  100% {\n    transform: translate(-100%, -100%) rotate(0deg);\n  }\n}\n",
+      "timestamp": "2025-12-29T09:44:50.383Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 217,
+      "line_number_start": 657,
+      "line_number_end": 668,
+      "code": "  inset: -2px;\n  background: conic-gradient(\n    from 0deg at 50% 50%,\n    transparent 0deg,\n    transparent 60deg,\n    var(--accent-blue) 90deg,\n    transparent 120deg,\n    transparent 360deg\n  );\n  border-radius: inherit;\n  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);\n  -webkit-mask-composite: xor;",
+      "timestamp": "2025-12-29T09:45:02.769Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 219,
+      "line_number_start": 669,
+      "line_number_end": 681,
+      "code": "  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);\n  mask-composite: exclude;\n  padding: 2px;\n  pointer-events: none;\n  animation: borderRotate 6s linear infinite;\n}\n\n@keyframes borderRotate {\n  0% {\n    transform: rotate(0deg);\n  }\n  100% {\n    transform: rotate(360deg);",
+      "timestamp": "2025-12-29T09:45:02.769Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 219,
+      "line_number_start": 657,
+      "line_number_end": 660,
+      "code": "  inset: 0;\n  padding: 2px;\n  background: linear-gradient(90deg, var(--accent-blue), transparent);\n  -webkit-mask:",
+      "timestamp": "2025-12-29T09:45:52.951Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 221,
+      "line_number_start": 661,
+      "line_number_end": 664,
+      "code": "    linear-gradient(#fff 0 0) content-box,\n    linear-gradient(#fff 0 0);\n  -webkit-mask-composite: xor;\n  mask:",
+      "timestamp": "2025-12-29T09:45:52.951Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 223,
+      "line_number_start": 665,
+      "line_number_end": 668,
+      "code": "    linear-gradient(#fff 0 0) content-box,\n    linear-gradient(#fff 0 0);\n  mask-composite: exclude;\n  pointer-events: none;",
+      "timestamp": "2025-12-29T09:45:52.951Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 225,
+      "line_number_start": 669,
+      "line_number_end": 672,
+      "code": "  animation: borderTrace 4s linear infinite;\n}\n\n@keyframes borderTrace {",
+      "timestamp": "2025-12-29T09:45:52.951Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 227,
+      "line_number_start": 673,
+      "line_number_end": 676,
+      "code": "  0% {\n    clip-path: polygon(0 0, 20% 0, 20% 0, 0 0);\n  }\n  12.5% {",
+      "timestamp": "2025-12-29T09:45:52.951Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 229,
+      "line_number_start": 677,
+      "line_number_end": 680,
+      "code": "    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);\n  }\n  25% {\n    clip-path: polygon(100% 0, 100% 0, 100% 20%, 100% 0);",
+      "timestamp": "2025-12-29T09:45:52.951Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 231,
+      "line_number_start": 681,
+      "line_number_end": 684,
+      "code": "  }\n  37.5% {\n    clip-path: polygon(100% 0, 100% 100%, 100% 100%, 100% 0);\n  }",
+      "timestamp": "2025-12-29T09:45:52.951Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 233,
+      "line_number_start": 685,
+      "line_number_end": 688,
+      "code": "  50% {\n    clip-path: polygon(100% 100%, 100% 100%, 80% 100%, 100% 100%);\n  }\n  62.5% {",
+      "timestamp": "2025-12-29T09:45:52.951Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 235,
+      "line_number_start": 689,
+      "line_number_end": 698,
+      "code": "    clip-path: polygon(100% 100%, 0 100%, 0 100%, 100% 100%);\n  }\n  75% {\n    clip-path: polygon(0 100%, 0 100%, 0 80%, 0 100%);\n  }\n  87.5% {\n    clip-path: polygon(0 100%, 0 0, 0 0, 0 100%);\n  }\n  100% {\n    clip-path: polygon(0 0, 0 0, 20% 0, 0 0);",
+      "timestamp": "2025-12-29T09:45:52.951Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 228,
+      "line_number_start": 657,
+      "line_number_end": 667,
+      "code": "  inset: -4px;\n  border-radius: inherit;\n  padding: 3px;\n  background: linear-gradient(\n    var(--angle, 0deg),\n    transparent 0%,\n    transparent 40%,\n    var(--accent-blue) 50%,\n    transparent 60%,\n    transparent 100%\n  );",
+      "timestamp": "2025-12-29T09:46:07.991Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 230,
+      "line_number_start": 677,
+      "line_number_end": 686,
+      "code": "  animation: borderSpin 4s linear infinite;\n}\n\n@keyframes borderSpin {\n  0% {\n    --angle: 0deg;\n    transform: rotate(0deg);\n  }\n  100% {\n    --angle: 360deg;",
+      "timestamp": "2025-12-29T09:46:07.992Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 232,
+      "line_number_start": 687,
+      "line_number_end": 696,
+      "code": "    transform: rotate(360deg);\n  }\n}\n\n@property --angle {\n  syntax: '<angle>';\n  initial-value: 0deg;\n  inherits: false;\n}\n",
+      "timestamp": "2025-12-29T09:46:07.992Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 231,
+      "line_number_start": 657,
+      "line_number_end": 688,
+      "code": "  top: -2px;\n  left: -2px;\n  right: -2px;\n  bottom: -2px;\n  background: linear-gradient(90deg, var(--accent-blue) 0%, transparent 100%);\n  background-size: 50% 3px, 3px 50%, 50% 3px, 3px 50%;\n  background-position: 0 0, 100% 0, 100% 100%, 0 100%;\n  background-repeat: no-repeat;\n  pointer-events: none;\n  animation: borderTrace 3s linear infinite;\n}\n\n@keyframes borderTrace {\n  0% {\n    background-position: 0% 0, 100% 0%, 100% 100%, 0% 100%;\n    background-size: 0% 3px, 3px 0%, 0% 3px, 3px 0%;\n  }\n  25% {\n    background-position: 0% 0, 100% 0%, 100% 100%, 0% 100%;\n    background-size: 100% 3px, 3px 0%, 0% 3px, 3px 0%;\n  }\n  50% {\n    background-position: 0% 0, 100% 0%, 100% 100%, 0% 100%;\n    background-size: 100% 3px, 3px 100%, 0% 3px, 3px 0%;\n  }\n  75% {\n    background-position: 0% 0, 100% 0%, 100% 100%, 0% 100%;\n    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 0%;\n  }\n  100% {\n    background-position: 0% 0, 100% 0%, 100% 100%, 0% 100%;\n    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;",
+      "timestamp": "2025-12-29T09:47:12.478Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 232,
+      "line_number_start": 149,
+      "line_number_end": 151,
+      "code": "        <svg class=\"install-border-animation\" xmlns=\"http://www.w3.org/2000/svg\">\n          <rect class=\"border-line\" x=\"0\" y=\"0\" width=\"100%\" height=\"100%\" fill=\"none\" stroke-width=\"3\"></rect>\n        </svg>",
+      "timestamp": "2025-12-29T09:48:46.569Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 233,
+      "line_number_start": 654,
+      "line_number_end": 676,
+      "code": ".install-border-animation {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  pointer-events: none;\n  z-index: 0;\n}\n\n.border-line {\n  stroke: var(--accent-blue);\n  stroke-dasharray: 1000;\n  stroke-dashoffset: 1000;\n  animation: drawBorder 4s linear infinite;\n}\n\n@keyframes drawBorder {\n  0% {\n    stroke-dashoffset: 1000;\n  }\n  100% {\n    stroke-dashoffset: 0;",
+      "timestamp": "2025-12-29T09:49:00.086Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 234,
+      "line_number_start": 686,
+      "line_number_end": 687,
+      "code": "  position: relative;\n  z-index: 1;",
+      "timestamp": "2025-12-29T09:49:22.112Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 236,
+      "line_number_start": 694,
+      "line_number_end": 702,
+      "code": "  position: relative;\n  z-index: 1;\n}\n\n.install-content .btn {\n  position: relative;\n  z-index: 1;\n}\n",
+      "timestamp": "2025-12-29T09:49:22.112Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 236,
+      "line_number_start": 665,
+      "line_number_end": 668,
+      "code": "  stroke: url(#borderGradient);\n  stroke-dasharray: 200 1800;\n  stroke-dashoffset: 0;\n  animation: drawBorder 6s linear infinite;",
+      "timestamp": "2025-12-29T09:51:15.235Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 238,
+      "line_number_start": 672,
+      "line_number_end": 673,
+      "code": "  to {\n    stroke-dashoffset: -2000;",
+      "timestamp": "2025-12-29T09:51:15.235Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 238,
+      "line_number_start": 150,
+      "line_number_end": 157,
+      "code": "          <defs>\n            <linearGradient id=\"borderGradient\" x1=\"0%\" y1=\"0%\" x2=\"100%\" y2=\"0%\">\n              <stop offset=\"0%\" style=\"stop-color:transparent;stop-opacity:0\" />\n              <stop offset=\"50%\" style=\"stop-color:#007acc;stop-opacity:0.3\" />\n              <stop offset=\"100%\" style=\"stop-color:#007acc;stop-opacity:1\" />\n            </linearGradient>\n          </defs>\n          <rect class=\"border-line\" x=\"1.5\" y=\"1.5\" width=\"calc(100% - 3px)\" height=\"calc(100% - 3px)\" fill=\"none\" stroke-width=\"3\"></rect>",
+      "timestamp": "2025-12-29T09:51:26.905Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 239,
+      "line_number_start": 7,
+      "line_number_end": 14,
+      "code": "/* === Scroll Animations === */\n.fade-in-up {\n  opacity: 0;\n  transform: translateY(30px);\n  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),\n              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);\n}\n",
+      "timestamp": "2025-12-29T09:53:09.308Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 241,
+      "line_number_start": 15,
+      "line_number_end": 23,
+      "code": ".fade-in-up.visible {\n  opacity: 1;\n  transform: translateY(0);\n}\n\n.stagger-1 { transition-delay: 0.1s; }\n.stagger-2 { transition-delay: 0.2s; }\n.stagger-3 { transition-delay: 0.3s; }\n",
+      "timestamp": "2025-12-29T09:53:09.308Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 241,
+      "line_number_start": 63,
+      "line_number_end": 63,
+      "code": "      <div class=\"context-content fade-in-up\">",
+      "timestamp": "2025-12-29T09:53:29.980Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 242,
+      "line_number_start": 72,
+      "line_number_end": 72,
+      "code": "      <div class=\"features-carousel fade-in-up\">",
+      "timestamp": "2025-12-29T09:53:47.547Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 243,
+      "line_number_start": 138,
+      "line_number_end": 140,
+      "code": "      <div class=\"how-wrapper fade-in-up\">\n        <h2 class=\"how-label stagger-1\">How It Works</h2>\n        <p class=\"how-text stagger-2\">Voight detects AI by its velocity signature—bursts of code faster than human typing. It uses diff algorithms to capture these injections, parses them against function boundaries into discrete segments, and evaluates control flow to flag complexity. Entirely read-only: no modification, no commit blocking. Just organized visibility.</p>",
+      "timestamp": "2025-12-29T09:54:03.967Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 244,
+      "line_number_start": 148,
+      "line_number_end": 148,
+      "code": "      <div class=\"install-content fade-in-up\">",
+      "timestamp": "2025-12-29T09:54:21.340Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 246,
+      "line_number_start": 159,
+      "line_number_end": 161,
+      "code": "        <h2 class=\"install-header stagger-1\">Get Voight</h2>\n        <p class=\"install-subtext stagger-2\">Free and open source.</p>\n        <a href=\"#MARKETPLACE_URL\" class=\"btn btn-primary btn-large stagger-3\">Install from VS Code Marketplace</a>",
+      "timestamp": "2025-12-29T09:54:21.340Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 246,
+      "line_number_start": 63,
+      "line_number_end": 63,
+      "code": "      <div class=\"context-content\">",
+      "timestamp": "2025-12-29T09:56:56.190Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 247,
+      "line_number_start": 72,
+      "line_number_end": 72,
+      "code": "      <div class=\"features-carousel\">",
+      "timestamp": "2025-12-29T09:57:03.208Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 248,
+      "line_number_start": 138,
+      "line_number_end": 140,
+      "code": "      <div class=\"how-wrapper\">\n        <h2 class=\"how-label\">How It Works</h2>\n        <p class=\"how-text\">Voight detects AI by its velocity signature—bursts of code faster than human typing. It uses diff algorithms to capture these injections, parses them against function boundaries into discrete segments, and evaluates control flow to flag complexity. Entirely read-only: no modification, no commit blocking. Just organized visibility.</p>",
+      "timestamp": "2025-12-29T09:57:11.778Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 249,
+      "line_number_start": 148,
+      "line_number_end": 148,
+      "code": "      <div class=\"install-content\">",
+      "timestamp": "2025-12-29T09:57:22.886Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 251,
+      "line_number_start": 159,
+      "line_number_end": 161,
+      "code": "        <h2 class=\"install-header\">Get Voight</h2>\n        <p class=\"install-subtext\">Free and open source.</p>\n        <a href=\"#MARKETPLACE_URL\" class=\"btn btn-primary btn-large\">Install from VS Code Marketplace</a>",
+      "timestamp": "2025-12-29T09:57:22.886Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 251,
+      "line_number_start": 148,
+      "line_number_end": 148,
+      "code": "  const animateElements = document.querySelectorAll('.feature-card');",
+      "timestamp": "2025-12-29T09:57:31.599Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 252,
+      "line_number_start": 41,
+      "line_number_end": 41,
+      "code": "        <h1 class=\"hero-headline reveal-on-scroll\">",
+      "timestamp": "2025-12-29T15:11:52.492Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 254,
+      "line_number_start": 46,
+      "line_number_end": 47,
+      "code": "        <p class=\"hero-subheadline reveal-on-scroll\" data-delay=\"100\">A VS Code extension that surfaces AI-generated code in reviewable segments. Stay familiar with your codebase without slowing down.</p>\n        <div class=\"hero-ctas reveal-on-scroll\" data-delay=\"200\">",
+      "timestamp": "2025-12-29T15:11:52.492Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 256,
+      "line_number_start": 51,
+      "line_number_end": 51,
+      "code": "        <div class=\"hero-visual reveal-on-scroll\" data-delay=\"300\">",
+      "timestamp": "2025-12-29T15:11:52.492Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 255,
+      "line_number_start": 63,
+      "line_number_end": 63,
+      "code": "      <div class=\"context-content reveal-on-scroll\">",
+      "timestamp": "2025-12-29T15:11:54.925Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 256,
+      "line_number_start": 89,
+      "line_number_end": 89,
+      "code": "            <div class=\"feature-card reveal-on-scroll active\" data-feature=\"0\">",
+      "timestamp": "2025-12-29T15:12:02.528Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 258,
+      "line_number_start": 98,
+      "line_number_end": 98,
+      "code": "            <div class=\"feature-card reveal-on-scroll\" data-feature=\"1\">",
+      "timestamp": "2025-12-29T15:12:02.528Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 260,
+      "line_number_start": 107,
+      "line_number_end": 107,
+      "code": "            <div class=\"feature-card reveal-on-scroll\" data-feature=\"2\">",
+      "timestamp": "2025-12-29T15:12:02.528Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 262,
+      "line_number_start": 116,
+      "line_number_end": 116,
+      "code": "            <div class=\"feature-card reveal-on-scroll\" data-feature=\"3\">",
+      "timestamp": "2025-12-29T15:12:02.528Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 260,
+      "line_number_start": 138,
+      "line_number_end": 138,
+      "code": "      <div class=\"how-wrapper reveal-on-scroll\">",
+      "timestamp": "2025-12-29T15:13:02.886Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 261,
+      "line_number_start": 148,
+      "line_number_end": 148,
+      "code": "      <div class=\"install-content reveal-on-scroll\">",
+      "timestamp": "2025-12-29T15:13:29.784Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 262,
+      "line_number_start": 141,
+      "line_number_end": 159,
+      "code": "  const observer = new IntersectionObserver((entries) => {\n    entries.forEach(entry => {\n      if (entry.isIntersecting) {\n        const element = entry.target as HTMLElement;\n        const delay = element.getAttribute('data-delay');\n\n        if (delay) {\n          setTimeout(() => {\n            element.classList.add('visible');\n          }, parseInt(delay));\n        } else {\n          element.classList.add('visible');\n        }\n\n        // Stop observing after animation triggers (one-time animation)\n        observer.unobserve(entry.target);\n      }\n    });\n  }, observerOptions);",
+      "timestamp": "2025-12-29T15:13:53.278Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 264,
+      "line_number_start": 141,
+      "line_number_end": 159,
+      "code": "  const observer = new IntersectionObserver((entries) => {\n    entries.forEach(entry => {\n      if (entry.isIntersecting) {\n        const element = entry.target as HTMLElement;\n        const delay = element.getAttribute('data-delay');\n\n        if (delay) {\n          setTimeout(() => {\n            element.classList.add('visible');\n          }, parseInt(delay));\n        } else {\n          element.classList.add('visible');\n        }\n\n        // Stop observing after animation triggers (one-time animation)\n        observer.unobserve(entry.target);\n      }\n    });\n  }, observerOptions);",
+      "timestamp": "2025-12-29T15:13:53.278Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 266,
+      "line_number_start": 141,
+      "line_number_end": 159,
+      "code": "  const observer = new IntersectionObserver((entries) => {\n    entries.forEach(entry => {\n      if (entry.isIntersecting) {\n        const element = entry.target as HTMLElement;\n        const delay = element.getAttribute('data-delay');\n\n        if (delay) {\n          setTimeout(() => {\n            element.classList.add('visible');\n          }, parseInt(delay));\n        } else {\n          element.classList.add('visible');\n        }\n\n        // Stop observing after animation triggers (one-time animation)\n        observer.unobserve(entry.target);\n      }\n    });\n  }, observerOptions);",
+      "timestamp": "2025-12-29T15:13:53.278Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 268,
+      "line_number_start": 141,
+      "line_number_end": 159,
+      "code": "  const observer = new IntersectionObserver((entries) => {\n    entries.forEach(entry => {\n      if (entry.isIntersecting) {\n        const element = entry.target as HTMLElement;\n        const delay = element.getAttribute('data-delay');\n\n        if (delay) {\n          setTimeout(() => {\n            element.classList.add('visible');\n          }, parseInt(delay));\n        } else {\n          element.classList.add('visible');\n        }\n\n        // Stop observing after animation triggers (one-time animation)\n        observer.unobserve(entry.target);\n      }\n    });\n  }, observerOptions);",
+      "timestamp": "2025-12-29T15:13:53.278Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 270,
+      "line_number_start": 135,
+      "line_number_end": 164,
+      "code": "function initScrollReveal(): void {\n  const observerOptions: IntersectionObserverInit = {\n    threshold: 0.1,\n    rootMargin: '0px 0px -100px 0px'\n  };\n\n  const observer = new IntersectionObserver((entries) => {\n    entries.forEach(entry => {\n      if (entry.isIntersecting) {\n        const element = entry.target as HTMLElement;\n        const delay = element.getAttribute('data-delay');\n\n        if (delay) {\n          setTimeout(() => {\n            element.classList.add('visible');\n          }, parseInt(delay));\n        } else {\n          element.classList.add('visible');\n        }\n\n        // Stop observing after animation triggers (one-time animation)\n        observer.unobserve(entry.target);\n      }\n    });\n  }, observerOptions);\n\n  // Observe all elements with reveal-on-scroll class\n  const revealElements = document.querySelectorAll('.reveal-on-scroll');\n  revealElements.forEach(el => observer.observe(el));\n}",
+      "timestamp": "2025-12-29T15:13:53.278Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 272,
+      "line_number_start": 141,
+      "line_number_end": 159,
+      "code": "  const observer = new IntersectionObserver((entries) => {\n    entries.forEach(entry => {\n      if (entry.isIntersecting) {\n        const element = entry.target as HTMLElement;\n        const delay = element.getAttribute('data-delay');\n\n        if (delay) {\n          setTimeout(() => {\n            element.classList.add('visible');\n          }, parseInt(delay));\n        } else {\n          element.classList.add('visible');\n        }\n\n        // Stop observing after animation triggers (one-time animation)\n        observer.unobserve(entry.target);\n      }\n    });\n  }, observerOptions);",
+      "timestamp": "2025-12-29T15:13:53.278Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 268,
+      "line_number_start": 6,
+      "line_number_end": 6,
+      "code": "  initScrollReveal();",
+      "timestamp": "2025-12-29T15:14:16.892Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/src/main.ts"
+    },
+    {
+      "block_no": 269,
+      "line_number_start": 740,
+      "line_number_end": 743,
+      "code": "/* === Scroll Reveal Animations === */\n.reveal-on-scroll {\n  opacity: 0;\n  transform: translateY(40px);",
+      "timestamp": "2025-12-29T15:14:19.997Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 271,
+      "line_number_start": 744,
+      "line_number_end": 747,
+      "code": "  transition: opacity 0.8s cubic-bezier(0.22, 0.61, 0.36, 1),\n              transform 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);\n}\n",
+      "timestamp": "2025-12-29T15:14:19.997Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 273,
+      "line_number_start": 748,
+      "line_number_end": 751,
+      "code": ".reveal-on-scroll.visible {\n  opacity: 1;\n  transform: translateY(0);\n}",
+      "timestamp": "2025-12-29T15:14:19.997Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 275,
+      "line_number_start": 752,
+      "line_number_end": 755,
+      "code": "\n/* Hero specific reveal animations */\n.hero-headline.reveal-on-scroll {\n  transform: translateY(30px) scale(0.98);",
+      "timestamp": "2025-12-29T15:14:19.997Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 277,
+      "line_number_start": 756,
+      "line_number_end": 759,
+      "code": "  transition: opacity 0.9s cubic-bezier(0.22, 0.61, 0.36, 1),\n              transform 0.9s cubic-bezier(0.22, 0.61, 0.36, 1);\n}\n",
+      "timestamp": "2025-12-29T15:14:19.997Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 279,
+      "line_number_start": 760,
+      "line_number_end": 763,
+      "code": ".hero-headline.reveal-on-scroll.visible {\n  transform: translateY(0) scale(1);\n}\n",
+      "timestamp": "2025-12-29T15:14:19.997Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 281,
+      "line_number_start": 764,
+      "line_number_end": 767,
+      "code": "/* Feature cards reveal */\n.feature-card.reveal-on-scroll {\n  transform: translateX(-30px);\n  transition: opacity 0.7s cubic-bezier(0.22, 0.61, 0.36, 1),",
+      "timestamp": "2025-12-29T15:14:19.997Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 283,
+      "line_number_start": 768,
+      "line_number_end": 771,
+      "code": "              transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);\n}\n\n.feature-card.reveal-on-scroll.visible {",
+      "timestamp": "2025-12-29T15:14:19.997Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 285,
+      "line_number_start": 772,
+      "line_number_end": 775,
+      "code": "  transform: translateX(0);\n}\n\n/* Context section reveal */",
+      "timestamp": "2025-12-29T15:14:19.997Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 287,
+      "line_number_start": 776,
+      "line_number_end": 779,
+      "code": ".context-content.reveal-on-scroll {\n  transform: translateY(30px);\n  transition: opacity 1s cubic-bezier(0.22, 0.61, 0.36, 1),\n              transform 1s cubic-bezier(0.22, 0.61, 0.36, 1);",
+      "timestamp": "2025-12-29T15:14:19.997Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 289,
+      "line_number_start": 780,
+      "line_number_end": 783,
+      "code": "}\n\n.context-content.reveal-on-scroll.visible {\n  transform: translateY(0);",
+      "timestamp": "2025-12-29T15:14:19.997Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 291,
+      "line_number_start": 784,
+      "line_number_end": 787,
+      "code": "}\n\n/* Install section reveal with scale */\n.install-content.reveal-on-scroll {",
+      "timestamp": "2025-12-29T15:14:19.997Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 293,
+      "line_number_start": 788,
+      "line_number_end": 791,
+      "code": "  transform: translateY(40px) scale(0.97);\n  transition: opacity 0.8s cubic-bezier(0.22, 0.61, 0.36, 1),\n              transform 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);\n}",
+      "timestamp": "2025-12-29T15:14:19.997Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 295,
+      "line_number_start": 792,
+      "line_number_end": 795,
+      "code": "\n.install-content.reveal-on-scroll.visible {\n  transform: translateY(0) scale(1);\n}",
+      "timestamp": "2025-12-29T15:14:19.997Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 297,
+      "line_number_start": 796,
+      "line_number_end": 799,
+      "code": "\n/* How It Works section reveal */\n.how-wrapper.reveal-on-scroll {\n  transform: translateY(35px);",
+      "timestamp": "2025-12-29T15:14:19.997Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 299,
+      "line_number_start": 800,
+      "line_number_end": 803,
+      "code": "  transition: opacity 0.9s cubic-bezier(0.22, 0.61, 0.36, 1),\n              transform 0.9s cubic-bezier(0.22, 0.61, 0.36, 1);\n}\n",
+      "timestamp": "2025-12-29T15:14:19.997Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 301,
+      "line_number_start": 804,
+      "line_number_end": 807,
+      "code": ".how-wrapper.reveal-on-scroll.visible {\n  transform: translateY(0);\n}\n",
+      "timestamp": "2025-12-29T15:14:19.997Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 303,
+      "line_number_start": 808,
+      "line_number_end": 811,
+      "code": "/* Staggered animation for hero elements */\n.hero-subheadline.reveal-on-scroll {\n  transform: translateY(25px);\n  transition-duration: 0.8s;",
+      "timestamp": "2025-12-29T15:14:19.997Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 305,
+      "line_number_start": 812,
+      "line_number_end": 815,
+      "code": "}\n\n.hero-ctas.reveal-on-scroll {\n  transform: translateY(25px);",
+      "timestamp": "2025-12-29T15:14:19.997Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 307,
+      "line_number_start": 816,
+      "line_number_end": 819,
+      "code": "  transition-duration: 0.8s;\n}\n\n.hero-visual.reveal-on-scroll {",
+      "timestamp": "2025-12-29T15:14:19.997Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 309,
+      "line_number_start": 820,
+      "line_number_end": 823,
+      "code": "  transform: translateY(30px) scale(0.98);\n  transition-duration: 0.9s;\n}\n",
+      "timestamp": "2025-12-29T15:14:19.997Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 311,
+      "line_number_start": 824,
+      "line_number_end": 827,
+      "code": ".hero-visual.reveal-on-scroll.visible {\n  transform: translateY(0) scale(1);\n}\n",
+      "timestamp": "2025-12-29T15:14:19.997Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 313,
+      "line_number_start": 828,
+      "line_number_end": 831,
+      "code": "/* Reduce motion for accessibility */\n@media (prefers-reduced-motion: reduce) {\n  .reveal-on-scroll {\n    transition: opacity 0.3s ease;",
+      "timestamp": "2025-12-29T15:14:19.997Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 315,
+      "line_number_start": 832,
+      "line_number_end": 839,
+      "code": "    transform: none;\n  }\n\n  .reveal-on-scroll.visible {\n    transform: none;\n  }\n}\n",
+      "timestamp": "2025-12-29T15:14:19.997Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 293,
+      "line_number_start": 753,
+      "line_number_end": 762,
+      "code": "/* Hero headline text reveal - box stays static, text fades in */\n.hero-headline span.reveal-on-scroll {\n  opacity: 0;\n  transform: none;\n  transition: opacity 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);\n}\n\n.hero-headline span.reveal-on-scroll.visible {\n  opacity: 1;\n  transform: none;",
+      "timestamp": "2025-12-29T15:27:01.936Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 294,
+      "line_number_start": 648,
+      "line_number_end": 649,
+      "code": "  background-color: rgba(30, 30, 30, 0.95);\n  backdrop-filter: blur(12px);",
+      "timestamp": "2025-12-29T15:29:12.622Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 295,
+      "line_number_start": 653,
+      "line_number_end": 656,
+      "code": "  animation: float 3s ease-in-out infinite;\n  box-shadow:\n    0 8px 32px rgba(0, 122, 204, 0.2),\n    0 4px 16px rgba(0, 0, 0, 0.4);",
+      "timestamp": "2025-12-29T15:32:21.807Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 297,
+      "line_number_start": 657,
+      "line_number_end": 660,
+      "code": "  transition: transform 0.3s ease, box-shadow 0.3s ease;\n}\n\n.install-content:hover {",
+      "timestamp": "2025-12-29T15:32:21.807Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 299,
+      "line_number_start": 661,
+      "line_number_end": 664,
+      "code": "  animation-play-state: paused;\n  transform: translateY(-8px);\n  box-shadow:\n    0 12px 48px rgba(0, 122, 204, 0.3),",
+      "timestamp": "2025-12-29T15:32:21.807Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 301,
+      "line_number_start": 665,
+      "line_number_end": 668,
+      "code": "    0 6px 24px rgba(0, 0, 0, 0.5);\n}\n\n@keyframes float {",
+      "timestamp": "2025-12-29T15:32:21.807Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 303,
+      "line_number_start": 669,
+      "line_number_end": 676,
+      "code": "  0%, 100% {\n    transform: translateY(0px);\n  }\n  50% {\n    transform: translateY(-12px);\n  }\n}\n",
+      "timestamp": "2025-12-29T15:32:21.807Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 300,
+      "line_number_start": 167,
+      "line_number_end": 167,
+      "code": "  position: fixed;",
+      "timestamp": "2025-12-29T15:46:25.978Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 302,
+      "line_number_start": 171,
+      "line_number_end": 173,
+      "code": "  height: 100vh;\n  pointer-events: none;\n  z-index: 999;",
+      "timestamp": "2025-12-29T15:46:25.978Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 304,
+      "line_number_start": 182,
+      "line_number_end": 182,
+      "code": "  top: 200px;",
+      "timestamp": "2025-12-29T15:46:25.978Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 306,
+      "line_number_start": 189,
+      "line_number_end": 189,
+      "code": "  top: 360px;",
+      "timestamp": "2025-12-29T15:46:25.978Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 308,
+      "line_number_start": 197,
+      "line_number_end": 197,
+      "code": "  left: 200px;",
+      "timestamp": "2025-12-29T15:46:25.978Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 310,
+      "line_number_start": 204,
+      "line_number_end": 204,
+      "code": "  left: calc(100vw - 200px);",
+      "timestamp": "2025-12-29T15:46:25.979Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 306,
+      "line_number_start": 395,
+      "line_number_end": 395,
+      "code": "  z-index: 999;",
+      "timestamp": "2025-12-29T15:46:29.382Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 308,
+      "line_number_start": 399,
+      "line_number_end": 399,
+      "code": "  top: 40vh;",
+      "timestamp": "2025-12-29T15:46:29.382Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 310,
+      "line_number_start": 408,
+      "line_number_end": 408,
+      "code": "  top: 60vh;",
+      "timestamp": "2025-12-29T15:46:29.382Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 309,
+      "line_number_start": 584,
+      "line_number_end": 584,
+      "code": "  position: fixed;",
+      "timestamp": "2025-12-29T15:46:32.546Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 311,
+      "line_number_start": 589,
+      "line_number_end": 591,
+      "code": "  height: 100vh;\n  pointer-events: none;\n  z-index: 999;",
+      "timestamp": "2025-12-29T15:46:32.546Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 313,
+      "line_number_start": 598,
+      "line_number_end": 598,
+      "code": "  left: 200px;",
+      "timestamp": "2025-12-29T15:46:32.546Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 315,
+      "line_number_start": 607,
+      "line_number_end": 607,
+      "code": "  left: calc(100vw - 200px);",
+      "timestamp": "2025-12-29T15:46:32.546Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 313,
+      "line_number_start": 107,
+      "line_number_end": 107,
+      "code": "  left: 200px;",
+      "timestamp": "2025-12-29T15:46:38.330Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 314,
+      "line_number_start": 120,
+      "line_number_end": 120,
+      "code": "  right: 200px;",
+      "timestamp": "2025-12-29T15:46:41.192Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 315,
+      "line_number_start": 425,
+      "line_number_end": 425,
+      "code": "  max-width: calc(100vw - 400px);",
+      "timestamp": "2025-12-29T15:46:44.233Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 316,
+      "line_number_start": 613,
+      "line_number_end": 613,
+      "code": "  max-width: calc(100vw - 400px);",
+      "timestamp": "2025-12-29T15:46:47.340Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 317,
+      "line_number_start": 167,
+      "line_number_end": 167,
+      "code": "  position: absolute;",
+      "timestamp": "2025-12-29T15:47:57.716Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 319,
+      "line_number_start": 171,
+      "line_number_end": 173,
+      "code": "  height: 100%;\n  pointer-events: none;\n  z-index: 1;",
+      "timestamp": "2025-12-29T15:47:57.716Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 321,
+      "line_number_start": 182,
+      "line_number_end": 182,
+      "code": "  top: var(--headline-top, 200px);",
+      "timestamp": "2025-12-29T15:47:57.716Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 323,
+      "line_number_start": 189,
+      "line_number_end": 189,
+      "code": "  top: var(--headline-bottom, 300px);",
+      "timestamp": "2025-12-29T15:47:57.716Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 325,
+      "line_number_start": 197,
+      "line_number_end": 197,
+      "code": "  left: var(--headline-left, 200px);",
+      "timestamp": "2025-12-29T15:47:57.716Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 327,
+      "line_number_start": 204,
+      "line_number_end": 204,
+      "code": "  left: var(--headline-right, 800px);",
+      "timestamp": "2025-12-29T15:47:57.716Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 323,
+      "line_number_start": 395,
+      "line_number_end": 395,
+      "code": "  z-index: 1;",
+      "timestamp": "2025-12-29T15:48:01.073Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 325,
+      "line_number_start": 399,
+      "line_number_end": 399,
+      "code": "  top: var(--features-top, 0);",
+      "timestamp": "2025-12-29T15:48:01.073Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 327,
+      "line_number_start": 408,
+      "line_number_end": 408,
+      "code": "  top: var(--features-bottom, 300px);",
+      "timestamp": "2025-12-29T15:48:01.073Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 326,
+      "line_number_start": 584,
+      "line_number_end": 584,
+      "code": "  position: absolute;",
+      "timestamp": "2025-12-29T15:48:04.068Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 328,
+      "line_number_start": 590,
+      "line_number_end": 590,
+      "code": "  z-index: 1;",
+      "timestamp": "2025-12-29T15:48:04.068Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 330,
+      "line_number_start": 597,
+      "line_number_end": 597,
+      "code": "  left: var(--headline-left, 200px);",
+      "timestamp": "2025-12-29T15:48:04.068Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 332,
+      "line_number_start": 606,
+      "line_number_end": 606,
+      "code": "  left: var(--headline-right, 800px);",
+      "timestamp": "2025-12-29T15:48:04.068Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 330,
+      "line_number_start": 107,
+      "line_number_end": 107,
+      "code": "  left: var(--headline-left, 200px);",
+      "timestamp": "2025-12-29T15:48:07.328Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 331,
+      "line_number_start": 120,
+      "line_number_end": 120,
+      "code": "  right: calc(100vw - var(--headline-right, 800px));",
+      "timestamp": "2025-12-29T15:48:10.875Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 332,
+      "line_number_start": 425,
+      "line_number_end": 425,
+      "code": "  max-width: calc(var(--headline-right, 800px) - var(--headline-left, 200px));",
+      "timestamp": "2025-12-29T15:48:13.979Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 333,
+      "line_number_start": 612,
+      "line_number_end": 612,
+      "code": "  max-width: calc(var(--headline-right, 800px) - var(--headline-left, 200px));",
+      "timestamp": "2025-12-29T15:48:16.884Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    }
+  ],
+  "metadata": {
+    "session": "2025-12-29T03-48-17-863Z",
+    "totalBlocks": 334,
+    "lastUpdated": "2025-12-29T15:48:16.885Z"
+  }
+}
