@@ -1,0 +1,89 @@
+{
+  "blocks": [
+    {
+      "block_no": 0,
+      "line_number_start": 77,
+      "line_number_end": 77,
+      "code": "          <video src=\"/resources/voight-go-fast.mp4\" class=\"auto-accept-demo-video\" autoplay loop muted playsinline></video>",
+      "timestamp": "2025-12-30T01:17:16.118Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 1,
+      "line_number_start": 348,
+      "line_number_end": 348,
+      "code": "  padding: var(--spacing-2xl) 0 var(--spacing-3xl);",
+      "timestamp": "2025-12-30T01:19:30.099Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 3,
+      "line_number_start": 359,
+      "line_number_end": 359,
+      "code": "  margin: 0 auto var(--spacing-xl);",
+      "timestamp": "2025-12-30T01:19:30.099Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 3,
+      "line_number_start": 348,
+      "line_number_end": 348,
+      "code": "  padding: var(--spacing-3xl) 0;",
+      "timestamp": "2025-12-30T01:23:29.992Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 5,
+      "line_number_start": 359,
+      "line_number_end": 359,
+      "code": "  margin: 0 auto;",
+      "timestamp": "2025-12-30T01:23:29.993Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 5,
+      "line_number_start": 546,
+      "line_number_end": 546,
+      "code": "  margin-top: var(--spacing-3xl);",
+      "timestamp": "2025-12-30T01:23:39.000Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/styles.css"
+    },
+    {
+      "block_no": 6,
+      "line_number_start": 52,
+      "line_number_end": 52,
+      "code": "          <video src=\"/resources/voight-demo-main.mp4\" class=\"hero-demo-gif\" autoplay loop muted playsinline controls></video>",
+      "timestamp": "2025-12-30T01:29:03.982Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 7,
+      "line_number_start": 77,
+      "line_number_end": 77,
+      "code": "          <video src=\"/resources/voight-go-fast.mp4\" class=\"auto-accept-demo-video\" autoplay loop muted playsinline controls></video>",
+      "timestamp": "2025-12-30T01:30:58.043Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 8,
+      "line_number_start": 23,
+      "line_number_end": 23,
+      "code": "          <a href=\"#auto-accept\" class=\"nav-link\">Auto Accept</a>",
+      "timestamp": "2025-12-30T01:34:38.627Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    },
+    {
+      "block_no": 9,
+      "line_number_start": 60,
+      "line_number_end": 60,
+      "code": "  <section id=\"auto-accept\" class=\"auto-accept\">",
+      "timestamp": "2025-12-30T01:34:52.146Z",
+      "file": "/Users/swarit-dev/voight-dev.github.io/index.html"
+    }
+  ],
+  "metadata": {
+    "session": "2025-12-30T00-49-28-621Z",
+    "totalBlocks": 10,
+    "lastUpdated": "2025-12-30T01:34:52.149Z"
+  }
+}
