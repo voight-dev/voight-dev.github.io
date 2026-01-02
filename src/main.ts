@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initSmoothScroll();
   initHeaderScroll();
   initHeadlineGrid();
-  initFeaturesCarousel();
   initScrollReveal();
+  initFeatureAccordion();
 });
 
 /**
@@ -24,62 +24,6 @@ function initHeadlineGrid(): void {
     document.documentElement.style.setProperty('--headline-right', `${rect.right}px`);
   }
 
-  updateGridLines();
-  window.addEventListener('resize', updateGridLines);
-  window.addEventListener('scroll', updateGridLines);
-}
-
-/**
- * Initialize features carousel with navigation
- */
-function initFeaturesCarousel(): void {
-  const featureCards = document.querySelectorAll('.feature-card') as NodeListOf<HTMLElement>;
-  const prevBtn = document.querySelector('.feature-nav-prev') as HTMLButtonElement;
-  const nextBtn = document.querySelector('.feature-nav-next') as HTMLButtonElement;
-  const featureBox = document.querySelector('.feature-box') as HTMLElement;
-
-  if (!featureCards.length || !prevBtn || !nextBtn || !featureBox) return;
-
-  let currentIndex = 0;
-  let isAnimating = false;
-
-  function updateFeature(newIndex: number) {
-    if (isAnimating) return;
-    isAnimating = true;
-
-    // Remove active class from current card
-    featureCards[currentIndex].classList.remove('active');
-
-    // Add active class to new card
-    featureCards[newIndex].classList.add('active');
-
-    currentIndex = newIndex;
-
-    // Allow next animation after transition completes
-    setTimeout(() => {
-      isAnimating = false;
-    }, 400);
-  }
-
-  function updateGridLines() {
-    const rect = featureBox.getBoundingClientRect();
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    document.documentElement.style.setProperty('--features-top', `${rect.top + scrollTop}px`);
-    document.documentElement.style.setProperty('--features-bottom', `${rect.bottom + scrollTop}px`);
-  }
-
-  prevBtn.addEventListener('click', () => {
-    const newIndex = currentIndex === 0 ? featureCards.length - 1 : currentIndex - 1;
-    updateFeature(newIndex);
-  });
-
-  nextBtn.addEventListener('click', () => {
-    const newIndex = currentIndex === featureCards.length - 1 ? 0 : currentIndex + 1;
-    updateFeature(newIndex);
-  });
-
-  // Update grid lines on load, resize, and scroll
   updateGridLines();
   window.addEventListener('resize', updateGridLines);
   window.addEventListener('scroll', updateGridLines);
@@ -165,7 +109,44 @@ function initScrollReveal(): void {
   revealElements.forEach(el => observer.observe(el));
 }
 
-// Initialize scroll reveal animations
-document.addEventListener('DOMContentLoaded', () => {
-  initScrollReveal();
-});
+/**
+ * Initialize feature accordion - expand/collapse cards based on scroll position
+ */
+function initFeatureAccordion(): void {
+  const featureSteps = document.querySelectorAll('.feature-step') as NodeListOf<HTMLElement>;
+  const progressBar = document.querySelector('.flow-connector-progress') as HTMLElement;
+  const flowConnector = document.querySelector('.flow-connector') as HTMLElement;
+
+  if (!featureSteps.length) return;
+
+  const observerOptions: IntersectionObserverInit = {
+    threshold: 0.4,
+    rootMargin: '-10% 0px -40% 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const step = entry.target as HTMLElement;
+
+      if (entry.isIntersecting) {
+        // Collapse all other steps
+        featureSteps.forEach(s => {
+          if (s !== step) {
+            s.classList.add('collapsed');
+          }
+        });
+        // Expand this step
+        step.classList.remove('collapsed');
+
+        // Update progress bar
+        if (progressBar && flowConnector) {
+          const stepIndex = Array.from(featureSteps).indexOf(step);
+          const progress = ((stepIndex + 1) / featureSteps.length) * 100;
+          progressBar.style.height = `${progress}%`;
+        }
+      }
+    });
+  }, observerOptions);
+
+  featureSteps.forEach(step => observer.observe(step));
+}

@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Voight – Understanding at the speed of shipping</title>
-  <meta name="description" content="A VS Code extension that surfaces AI-generated code in reviewable segments. Stay familiar with your codebase without slowing down.">
+  <meta name="description" content="A VS Code extension that surfaces AI-generated code in reviewable segments. For engineers who need to understand what AI built.">
+  <link rel="icon" type="image/svg+xml" href="/resources/voight-logo-v2-32x32.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -16,8 +17,13 @@
     <div class="container">
       <div class="header-content">
         <div class="logo">
-          <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20.3223 23.3633L16.0059 32L0 0.0078125L9.33203 0.00488281L20.3223 23.3633ZM23.0293 17.9463L14.5869 0.00390625L32 0L23.0293 17.9463Z" fill="white"/>
+          <svg class="logo-animated" width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Main V shape (left part) -->
+            <path class="logo-main" d="M20.3223 23.3633L16.0059 32L0 0.0078125L9.33203 0.00488281L20.3223 23.3633Z" fill="white"/>
+            <!-- Cut piece (right triangle) -->
+            <path class="logo-cut" d="M23.0293 17.9463L14.5869 0.00390625L32 0L23.0293 17.9463Z" fill="white"/>
+            <!-- Slice line -->
+            <line class="logo-slice" x1="14" y1="0" x2="23" y2="18" stroke="white" stroke-width="1.5"/>
           </svg>
         </div>
         <nav class="nav">
@@ -47,8 +53,8 @@
         </h1>
         <p class="hero-subheadline reveal-on-scroll" data-delay="100">A VS Code extension that surfaces AI-generated code in reviewable segments. Stay familiar with your codebase without slowing down.</p>
         <div class="hero-ctas reveal-on-scroll" data-delay="200">
-          <a href="#MARKETPLACE_URL" class="btn btn-primary">Install for VS Code</a>
-          <a href="#GITHUB_URL" class="btn btn-secondary">View on GitHub →</a>
+          <a href="https://marketplace.visualstudio.com/items?itemName=SwaritPandey.voight" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Install for VS Code</a>
+          <a href="https://github.com/voight-dev/voight" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">View on GitHub →</a>
         </div>
         <div class="hero-visual">
           <video src="/resources/voight-demo-main.mp4" class="hero-demo-gif" autoplay loop muted playsinline controls></video>
@@ -71,8 +77,8 @@
             <div class="line line-6"></div>
           </div>
           <div class="auto-accept-text-content">
-            <h2 class="auto-accept-headline">Auto accept with confidence</h2>
-            <p class="auto-accept-body">Run your AI tools at full throttle. Voight captures the edit stream in real-time, instantly organizing scattered changes into coherent, human-readable segments. You get the raw speed of auto-accept with the precision of a manual audit. <strong>Raw speed. Clear understanding.</strong></p>
+            <h2 class="auto-accept-headline">Auto-accept without losing the thread</h2>
+            <p class="auto-accept-body">AI edits arrive fast — sometimes too fast to follow. Voight captures the stream in real-time, organizing scattered changes into coherent, reviewable segments. You don't have to slow down to stay informed. <strong>When the code matters, you'll know what changed.</strong></p>
           </div>
         </div>
         <div class="auto-accept-visual">
@@ -86,7 +92,9 @@
   <section class="context">
     <div class="container">
       <div class="context-content reveal-on-scroll">
-        <p>AI writes code fast. You accept, commit, move on. Over time, the codebase becomes unfamiliar—yours in name, but not in understanding. When something breaks, you're debugging a stranger's code. <strong>Voight isn't about checking AI's work. It's about staying engaged with your own system.</strong></p>
+        <div class="context-quote-mark" aria-hidden="true">"</div>
+        <p>When you're deep in a system — optimizing performance, refactoring architecture, shipping something that matters — you need to know what AI actually did. Not because you don't trust it, but because the code is yours to maintain. <strong>Voight keeps you engaged without slowing you down.</strong></p>
+        <div class="context-accent-line" aria-hidden="true"></div>
       </div>
     </div>
   </section>
@@ -94,75 +102,117 @@
   <!-- Features -->
   <section id="features" class="features">
     <div class="container">
-      <div class="features-carousel">
-        <div class="features-grid-lines">
-          <div class="grid-line grid-line-features-top"></div>
-          <div class="grid-line grid-line-features-bottom"></div>
+      <div class="features-flow">
+        <!-- Connector line with progress fill -->
+        <div class="flow-connector" aria-hidden="true">
+          <div class="flow-connector-progress"></div>
         </div>
-        <div class="feature-box">
-          <button class="feature-arrow feature-arrow-left feature-nav-prev" aria-label="Previous feature">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <button class="feature-arrow feature-arrow-right feature-nav-next" aria-label="Next feature">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <div class="feature-content">
-            <div class="feature-card reveal-on-scroll active" data-feature="0">
-              <div class="feature-visual">
-                <video src="/resources/voight-segments.mp4" class="feature-gif" autoplay loop muted playsinline></video>
-              </div>
-              <div class="feature-text">
-                <h3 class="feature-title">Segments</h3>
-                <p class="feature-description">AI-generated code is parsed into reviewable chunks. Step through them one at a time—each click advances to the next segment and jumps your cursor to the relevant lines.</p>
+
+        <!-- Feature 1: Timeline View -->
+        <div class="feature-step reveal-on-scroll">
+          <div class="step-marker">
+            <span class="step-number">01</span>
+          </div>
+          <div class="step-content">
+            <div class="step-visual">
+              <div class="step-visual-inner">
+                <video src="/resources/voight-timeline-updated.mp4" class="step-video" autoplay loop muted playsinline></video>
               </div>
             </div>
-            <div class="feature-card reveal-on-scroll" data-feature="1">
-              <div class="feature-visual">
-                <video src="/resources/voight-explanations.mp4" class="feature-gif" autoplay loop muted playsinline></video>
-              </div>
-              <div class="feature-text">
-                <h3 class="feature-title">BYOK Explanations</h3>
-                <p class="feature-description">Send any segment to an AI for an isolated explanation of what the code actually does—independent of what you asked for. Bring your own API key.</p>
-              </div>
-            </div>
-            <div class="feature-card reveal-on-scroll" data-feature="2">
-              <div class="feature-visual">
-                <video src="/resources/voight-context-markers.mp4" class="feature-gif" autoplay loop muted playsinline></video>
-              </div>
-              <div class="feature-text">
-                <h3 class="feature-title">Context Markers</h3>
-                <p class="feature-description">Leave notes on segments for yourself. Mark complex logic. Leave breadcrumbs for when you return to this code later.</p>
-              </div>
-            </div>
-            <div class="feature-card reveal-on-scroll" data-feature="3">
-              <div class="feature-visual">
-                <video src="/resources/voight-complexity.mp4" class="feature-gif" autoplay loop muted playsinline></video>
-              </div>
-              <div class="feature-text">
-                <h3 class="feature-title">Complexity Indicators</h3>
-                <p class="feature-description">A lightweight cyclomatic complexity score flags functions with denser logic. Know where the risk lives before you commit.</p>
+            <div class="step-text">
+              <h3 class="step-title">Timeline View</h3>
+              <p class="step-tagline">See the full sequence of AI edits across your project.</p>
+              <div class="step-description">
+                <div class="step-description-inner">When AI edits span many files, reviewing file-by-file loses the architectural thread. The timeline shows navigation markers like — preserving the order so you can reconstruct how a complex feature was built.</div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- How It Works -->
-  <section class="how-it-works">
-    <div class="container">
-      <div class="how-grid-lines">
-        <div class="grid-line grid-line-left"></div>
-        <div class="grid-line grid-line-right"></div>
-      </div>
-      <div class="how-wrapper reveal-on-scroll">
-        <h2 class="how-label">How It Works</h2>
-        <p class="how-text">Voight detects AI by its velocity signature—bursts of code faster than human typing. It uses diff algorithms to capture these injections, parses them against function boundaries into discrete segments, and evaluates control flow to flag complexity. Entirely read-only: no modification, no commit blocking. Just organized visibility.</p>
+        <!-- Feature 2: Segments -->
+        <div class="feature-step reveal-on-scroll collapsed" data-delay="100">
+          <div class="step-marker">
+            <span class="step-number">02</span>
+          </div>
+          <div class="step-content">
+            <div class="step-visual">
+              <div class="step-visual-inner">
+                <video src="/resources/voight-segments.mp4" class="step-video" autoplay loop muted playsinline></video>
+              </div>
+            </div>
+            <div class="step-text">
+              <h3 class="step-title">Segments</h3>
+              <p class="step-tagline">Review AI changes at your own pace.</p>
+              <div class="step-description">
+                <div class="step-description-inner">AI-generated code is parsed into reviewable chunks. Each click advances to the next segment and jumps your cursor to the relevant lines. From the timeline, drill down into any segment.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 3: BYOK Explanations -->
+        <div class="feature-step reveal-on-scroll collapsed" data-delay="100">
+          <div class="step-marker">
+            <span class="step-number">03</span>
+          </div>
+          <div class="step-content">
+            <div class="step-visual">
+              <div class="step-visual-inner">
+                <video src="/resources/voight-explanations.mp4" class="step-video" autoplay loop muted playsinline></video>
+              </div>
+            </div>
+            <div class="step-text">
+              <h3 class="step-title">BYOK Explanations</h3>
+              <p class="step-tagline">Ask a second opinion on what the code actually does.</p>
+              <div class="step-description">
+                <div class="step-description-inner">Send any segment to an AI for an isolated explanation of what the code actually does—independent of what you asked for. Bring your own API key.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 4: Context Markers -->
+        <div class="feature-step reveal-on-scroll collapsed" data-delay="100">
+          <div class="step-marker">
+            <span class="step-number">04</span>
+          </div>
+          <div class="step-content">
+            <div class="step-visual">
+              <div class="step-visual-inner">
+                <video src="/resources/voight-context-markers.mp4" class="step-video" autoplay loop muted playsinline></video>
+              </div>
+            </div>
+            <div class="step-text">
+              <h3 class="step-title">Context Markers</h3>
+              <p class="step-tagline">Leave breadcrumbs for your future self.</p>
+              <div class="step-description">
+                <div class="step-description-inner">Mark what matters. Flag complex logic, leave notes for yourself. When you return to this code — next week or next year — your annotations will be waiting.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 5: Complexity Indicators -->
+        <div class="feature-step reveal-on-scroll collapsed" data-delay="100">
+          <div class="step-marker">
+            <span class="step-number">05</span>
+          </div>
+          <div class="step-content">
+            <div class="step-visual">
+              <div class="step-visual-inner">
+                <video src="/resources/voight-complexity.mp4" class="step-video" autoplay loop muted playsinline></video>
+              </div>
+            </div>
+            <div class="step-text">
+              <h3 class="step-title">Complexity Indicators</h3>
+              <p class="step-tagline">Know where the risk lives before you commit.</p>
+              <div class="step-description">
+                <div class="step-description-inner">A lightweight cyclomatic complexity score flags functions with denser logic. Visible throughout your review, highlighting where to pay closer attention. Currently supports Go, TypeScript/JavaScript, and Python.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -183,7 +233,7 @@
         </svg>
         <h2 class="install-header">Get Voight</h2>
         <p class="install-subtext">Free and open source.</p>
-        <a href="#MARKETPLACE_URL" class="btn btn-primary btn-large">Install from VS Code Marketplace</a>
+        <a href="https://marketplace.visualstudio.com/items?itemName=SwaritPandey.voight" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">Install from VS Code Marketplace</a>
       </div>
     </div>
   </section>
@@ -199,9 +249,10 @@
           <span class="footer-wordmark">Voight</span>
         </div>
         <div class="footer-links">
-          <a href="#GITHUB_URL" class="footer-link">GitHub</a>
-          <a href="#MARKETPLACE_URL" class="footer-link">VS Code Marketplace</a>
-          <a href="#TWITTER_URL" class="footer-link">Twitter</a>
+          <a href="https://github.com/voight-dev/voight" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+          <a href="https://marketplace.visualstudio.com/items?itemName=SwaritPandey.voight" target="_blank" rel="noopener noreferrer" class="footer-link">VS Code Marketplace</a>
+          <a href="https://x.com/voight_dev" target="_blank" rel="noopener noreferrer" class="footer-link">X</a>
+          <a href="mailto:feedback@voight.dev" class="footer-link">Feedback</a>
         </div>
       </div>
     </div>

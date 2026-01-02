@@ -1,0 +1,704 @@
+[
+  {
+    "timestamp": "2025-12-30T01:17:16.116Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/index.html",
+    "detected": true,
+    "textLength": 125,
+    "completeText": "          <video src=\"/resources/voight-go-fast.mp4\" class=\"auto-accept-demo-video\" autoplay loop muted playsinline></video>\n",
+    "rangeStart": {
+      "line": 77,
+      "char": 0
+    },
+    "rangeEnd": {
+      "line": 78,
+      "char": 0
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 1767057436116,
+    "documentVersion": 14
+  },
+  {
+    "timestamp": "2025-12-30T01:19:30.098Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": true,
+    "textLength": 217,
+    "completeText": "  padding: var(--spacing-2xl) 0 var(--spacing-3xl);\n}\n\n.auto-accept-content {\n  max-width: 900px;\n  margin: 0 auto;\n}\n\n.auto-accept-text {\n  position: relative;\n  max-width: 800px;\n  margin: 0 auto var(--spacing-xl);\n",
+    "rangeStart": {
+      "line": 348,
+      "char": 0
+    },
+    "rangeEnd": {
+      "line": 360,
+      "char": 0
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 133982,
+    "documentVersion": 28
+  },
+  {
+    "timestamp": "2025-12-30T01:23:29.992Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": true,
+    "textLength": 180,
+    "completeText": "  padding: var(--spacing-3xl) 0;\n}\n\n.auto-accept-content {\n  max-width: 900px;\n  margin: 0 auto;\n}\n\n.auto-accept-text {\n  position: relative;\n  max-width: 800px;\n  margin: 0 auto;\n",
+    "rangeStart": {
+      "line": 348,
+      "char": 0
+    },
+    "rangeEnd": {
+      "line": 360,
+      "char": 0
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 239894,
+    "documentVersion": 29
+  },
+  {
+    "timestamp": "2025-12-30T01:23:38.999Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": true,
+    "textLength": 34,
+    "completeText": "  margin-top: var(--spacing-3xl);\n",
+    "rangeStart": {
+      "line": 546,
+      "char": 0
+    },
+    "rangeEnd": {
+      "line": 547,
+      "char": 0
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 9007,
+    "documentVersion": 30
+  },
+  {
+    "timestamp": "2025-12-30T01:24:30.584Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 348,
+      "char": 30
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 31
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 51585,
+    "documentVersion": 31
+  },
+  {
+    "timestamp": "2025-12-30T01:24:30.989Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 348,
+      "char": 29
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 30
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 405,
+    "documentVersion": 32
+  },
+  {
+    "timestamp": "2025-12-30T01:24:31.023Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 348,
+      "char": 28
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 29
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 34,
+    "documentVersion": 33
+  },
+  {
+    "timestamp": "2025-12-30T01:24:31.059Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 348,
+      "char": 27
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 28
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 36,
+    "documentVersion": 34
+  },
+  {
+    "timestamp": "2025-12-30T01:24:31.089Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 348,
+      "char": 26
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 27
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 30,
+    "documentVersion": 35
+  },
+  {
+    "timestamp": "2025-12-30T01:24:31.122Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 348,
+      "char": 25
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 26
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 33,
+    "documentVersion": 36
+  },
+  {
+    "timestamp": "2025-12-30T01:24:31.158Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 348,
+      "char": 24
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 25
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 36,
+    "documentVersion": 37
+  },
+  {
+    "timestamp": "2025-12-30T01:24:31.189Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 348,
+      "char": 23
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 24
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 31,
+    "documentVersion": 38
+  },
+  {
+    "timestamp": "2025-12-30T01:24:31.223Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 348,
+      "char": 22
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 23
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 34,
+    "documentVersion": 39
+  },
+  {
+    "timestamp": "2025-12-30T01:24:31.272Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 348,
+      "char": 21
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 22
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 49,
+    "documentVersion": 40
+  },
+  {
+    "timestamp": "2025-12-30T01:24:31.299Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 348,
+      "char": 20
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 21
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 27,
+    "documentVersion": 41
+  },
+  {
+    "timestamp": "2025-12-30T01:24:31.324Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 348,
+      "char": 19
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 20
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 25,
+    "documentVersion": 42
+  },
+  {
+    "timestamp": "2025-12-30T01:24:31.355Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 348,
+      "char": 18
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 19
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 31,
+    "documentVersion": 43
+  },
+  {
+    "timestamp": "2025-12-30T01:24:31.389Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 348,
+      "char": 17
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 18
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 34,
+    "documentVersion": 44
+  },
+  {
+    "timestamp": "2025-12-30T01:24:31.423Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 348,
+      "char": 16
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 17
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 34,
+    "documentVersion": 45
+  },
+  {
+    "timestamp": "2025-12-30T01:24:31.455Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 348,
+      "char": 15
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 16
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 32,
+    "documentVersion": 46
+  },
+  {
+    "timestamp": "2025-12-30T01:24:31.489Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 348,
+      "char": 14
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 15
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 34,
+    "documentVersion": 47
+  },
+  {
+    "timestamp": "2025-12-30T01:24:31.534Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 348,
+      "char": 13
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 14
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 45,
+    "documentVersion": 48
+  },
+  {
+    "timestamp": "2025-12-30T01:24:31.558Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 348,
+      "char": 12
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 13
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 24,
+    "documentVersion": 49
+  },
+  {
+    "timestamp": "2025-12-30T01:24:31.589Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 348,
+      "char": 11
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 12
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 31,
+    "documentVersion": 50
+  },
+  {
+    "timestamp": "2025-12-30T01:24:33.406Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": true,
+    "textLength": 20,
+    "completeText": "var(--spacing-3xl) 0",
+    "rangeStart": {
+      "line": 348,
+      "char": 11
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 11
+    },
+    "rangeIsEmpty": true,
+    "timeSinceLastChange": 1817,
+    "documentVersion": 51
+  },
+  {
+    "timestamp": "2025-12-30T01:24:38.788Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 348,
+      "char": 25
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 26
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 5382,
+    "documentVersion": 52
+  },
+  {
+    "timestamp": "2025-12-30T01:25:43.415Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 1,
+    "completeText": "0",
+    "rangeStart": {
+      "line": 348,
+      "char": 25
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 25
+    },
+    "rangeIsEmpty": true,
+    "timeSinceLastChange": 64627,
+    "documentVersion": 53
+  },
+  {
+    "timestamp": "2025-12-30T01:25:43.685Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 1,
+    "completeText": ".",
+    "rangeStart": {
+      "line": 348,
+      "char": 26
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 26
+    },
+    "rangeIsEmpty": true,
+    "timeSinceLastChange": 270,
+    "documentVersion": 54
+  },
+  {
+    "timestamp": "2025-12-30T01:25:44.026Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 1,
+    "completeText": "5",
+    "rangeStart": {
+      "line": 348,
+      "char": 27
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 27
+    },
+    "rangeIsEmpty": true,
+    "timeSinceLastChange": 341,
+    "documentVersion": 55
+  },
+  {
+    "timestamp": "2025-12-30T01:26:41.252Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 1,
+    "completeText": "=",
+    "rangeStart": {
+      "line": 348,
+      "char": 28
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 28
+    },
+    "rangeIsEmpty": true,
+    "timeSinceLastChange": 57226,
+    "documentVersion": 56
+  },
+  {
+    "timestamp": "2025-12-30T01:26:41.793Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 348,
+      "char": 28
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 29
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 541,
+    "documentVersion": 57
+  },
+  {
+    "timestamp": "2025-12-30T01:26:41.891Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 348,
+      "char": 27
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 28
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 98,
+    "documentVersion": 58
+  },
+  {
+    "timestamp": "2025-12-30T01:26:42.028Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 348,
+      "char": 26
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 27
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 137,
+    "documentVersion": 59
+  },
+  {
+    "timestamp": "2025-12-30T01:26:42.133Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 348,
+      "char": 25
+    },
+    "rangeEnd": {
+      "line": 348,
+      "char": 26
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 105,
+    "documentVersion": 60
+  },
+  {
+    "timestamp": "2025-12-30T01:27:04.749Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/styles.css",
+    "detected": false,
+    "textLength": 0,
+    "completeText": "",
+    "rangeStart": {
+      "line": 360,
+      "char": 25
+    },
+    "rangeEnd": {
+      "line": 360,
+      "char": 26
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 22616,
+    "documentVersion": 61
+  },
+  {
+    "timestamp": "2025-12-30T01:29:03.981Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/index.html",
+    "detected": true,
+    "textLength": 127,
+    "completeText": "          <video src=\"/resources/voight-demo-main.mp4\" class=\"hero-demo-gif\" autoplay loop muted playsinline controls></video>\n",
+    "rangeStart": {
+      "line": 52,
+      "char": 0
+    },
+    "rangeEnd": {
+      "line": 53,
+      "char": 0
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 119232,
+    "documentVersion": 15
+  },
+  {
+    "timestamp": "2025-12-30T01:30:58.042Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/index.html",
+    "detected": true,
+    "textLength": 134,
+    "completeText": "          <video src=\"/resources/voight-go-fast.mp4\" class=\"auto-accept-demo-video\" autoplay loop muted playsinline controls></video>\n",
+    "rangeStart": {
+      "line": 77,
+      "char": 0
+    },
+    "rangeEnd": {
+      "line": 78,
+      "char": 0
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 114061,
+    "documentVersion": 16
+  },
+  {
+    "timestamp": "2025-12-30T01:34:38.626Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/index.html",
+    "detected": true,
+    "textLength": 66,
+    "completeText": "          <a href=\"#auto-accept\" class=\"nav-link\">Auto Accept</a>\n",
+    "rangeStart": {
+      "line": 23,
+      "char": 0
+    },
+    "rangeEnd": {
+      "line": 23,
+      "char": 0
+    },
+    "rangeIsEmpty": true,
+    "timeSinceLastChange": 220584,
+    "documentVersion": 17
+  },
+  {
+    "timestamp": "2025-12-30T01:34:52.145Z",
+    "file": "/Users/swarit-dev/voight-dev.github.io/index.html",
+    "detected": true,
+    "textLength": 49,
+    "completeText": "  <section id=\"auto-accept\" class=\"auto-accept\">\n",
+    "rangeStart": {
+      "line": 60,
+      "char": 0
+    },
+    "rangeEnd": {
+      "line": 61,
+      "char": 0
+    },
+    "rangeIsEmpty": false,
+    "timeSinceLastChange": 13519,
+    "documentVersion": 18
+  }
+]
