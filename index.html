@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Voight – Understanding at the speed of shipping</title>
-  <meta name="description" content="A VS Code extension that surfaces AI-generated code in reviewable segments. For engineers who need to understand what AI built.">
+  <meta name="description" content="An editor extension that surfaces AI-generated code in reviewable segments. Works with VS Code, Cursor, Windsurf, and more.">
   <link rel="icon" type="image/svg+xml" href="/resources/voight-logo-v2-32x32.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,9 +28,10 @@
         </div>
         <nav class="nav">
           <a href="#auto-accept" class="nav-link">Auto Accept</a>
+          <a href="#editors" class="nav-link">Editors</a>
           <a href="#features" class="nav-link">Features</a>
           <a href="#install" class="nav-link">Install</a>
-          <a href="#GITHUB_URL" class="nav-link">GitHub</a>
+          <a href="https://github.com/voight-dev/voight" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a>
         </nav>
       </div>
     </div>
@@ -51,9 +52,9 @@
           <span class="operator reveal-on-scroll" data-delay="100">at the speed of</span>
           <span class="string reveal-on-scroll" data-delay="200">shipping</span><span class="punctuation reveal-on-scroll" data-delay="200">.</span>
         </h1>
-        <p class="hero-subheadline reveal-on-scroll" data-delay="100">A VS Code extension that surfaces AI-generated code in reviewable segments. Stay familiar with your codebase without slowing down.</p>
+        <p class="hero-subheadline reveal-on-scroll" data-delay="100">An editor extension that surfaces AI-generated code in reviewable segments. Stay familiar with your codebase without slowing down.</p>
         <div class="hero-ctas reveal-on-scroll" data-delay="200">
-          <a href="https://marketplace.visualstudio.com/items?itemName=SwaritPandey.voight" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Install for VS Code</a>
+          <a href="#editors" class="btn btn-primary">Get Started</a>
           <a href="https://github.com/voight-dev/voight" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">View on GitHub →</a>
         </div>
         <div class="hero-visual">
@@ -88,13 +89,71 @@
     </div>
   </section>
 
-  <!-- Context -->
-  <section class="context">
+  <!-- Editors Section -->
+  <section id="editors" class="editors">
     <div class="container">
-      <div class="context-content reveal-on-scroll">
-        <div class="context-quote-mark" aria-hidden="true">"</div>
-        <p>When you're deep in a system — optimizing performance, refactoring architecture, shipping something that matters — you need to know what AI actually did. Not because you don't trust it, but because the code is yours to maintain. <strong>Voight keeps you engaged without slowing you down.</strong></p>
-        <div class="context-accent-line" aria-hidden="true"></div>
+      <div class="editors-header reveal-on-scroll">
+        <h2 class="editors-headline">Works with your favorite editor</h2>
+        <p class="editors-subtext">Available on VS Code Marketplace and Open VSX</p>
+      </div>
+
+      <!-- Editor Browser -->
+      <div class="editor-browser reveal-on-scroll">
+        <!-- Tab Bar -->
+        <div class="editor-tabbar">
+          <button class="editor-tab active" data-editor="vscode">
+            <img src="/resources/editors/editor_vscode.png" alt="VS Code" class="editor-tab-logo">
+            <span class="editor-tab-name">VS Code</span>
+          </button>
+          <button class="editor-tab" data-editor="cursor">
+            <img src="/resources/editors/editor_cursor.png" alt="Cursor" class="editor-tab-logo">
+            <span class="editor-tab-name">Cursor</span>
+          </button>
+          <button class="editor-tab" data-editor="windsurf">
+            <img src="/resources/editors/editor_windsurf.png" alt="Windsurf" class="editor-tab-logo">
+            <span class="editor-tab-name">Windsurf</span>
+          </button>
+          <button class="editor-tab" data-editor="antigravity">
+            <img src="/resources/editors/editor_antigravity.png" alt="Antigravity" class="editor-tab-logo">
+            <span class="editor-tab-name">Antigravity</span>
+          </button>
+        </div>
+
+        <!-- Content Area -->
+        <div class="editor-content">
+          <!-- VS Code Panel -->
+          <div class="editor-panel active" data-editor="vscode">
+            <video src="/resources/editors/demo_vscode.mp4" class="editor-video" autoplay loop muted playsinline></video>
+            <div class="editor-install-bar">
+              <span class="editor-install-source">Install from VS Code Marketplace</span>
+              <a href="https://marketplace.visualstudio.com/items?itemName=SwaritPandey.voight" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Install</a>
+            </div>
+          </div>
+          <!-- Cursor Panel -->
+          <div class="editor-panel" data-editor="cursor">
+            <video src="/resources/editors/demo_cursor.mp4" class="editor-video" autoplay loop muted playsinline></video>
+            <div class="editor-install-bar">
+              <span class="editor-install-source">Install from Open VSX</span>
+              <a href="https://open-vsx.org/extension/SwaritPandey/voight" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Install</a>
+            </div>
+          </div>
+          <!-- Windsurf Panel -->
+          <div class="editor-panel" data-editor="windsurf">
+            <video src="/resources/editors/demo_windsurf.mp4" class="editor-video" autoplay loop muted playsinline></video>
+            <div class="editor-install-bar">
+              <span class="editor-install-source">Install from Open VSX</span>
+              <a href="https://open-vsx.org/extension/SwaritPandey/voight" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Install</a>
+            </div>
+          </div>
+          <!-- Antigravity Panel -->
+          <div class="editor-panel" data-editor="antigravity">
+            <video src="/resources/editors/demo_antigravity.mp4" class="editor-video" autoplay loop muted playsinline></video>
+            <div class="editor-install-bar">
+              <span class="editor-install-source">Install from Open VSX</span>
+              <a href="https://open-vsx.org/extension/SwaritPandey/voight" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Install</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -217,6 +276,17 @@
     </div>
   </section>
 
+  <!-- Context -->
+  <section class="context">
+    <div class="container">
+      <div class="context-content reveal-on-scroll">
+        <div class="context-quote-mark" aria-hidden="true">"</div>
+        <p>When you're deep in a system — optimizing performance, refactoring architecture, shipping something that matters — you need to know what AI actually did. Not because you don't trust it, but because the code is yours to maintain. <strong>Voight keeps you engaged without slowing you down.</strong></p>
+        <div class="context-accent-line" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
   <!-- Install -->
   <section id="install" class="install">
     <div class="container">
@@ -233,7 +303,10 @@
         </svg>
         <h2 class="install-header">Get Voight</h2>
         <p class="install-subtext">Free and open source.</p>
-        <a href="https://marketplace.visualstudio.com/items?itemName=SwaritPandey.voight" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">Install from VS Code Marketplace</a>
+        <div class="install-buttons">
+          <a href="https://marketplace.visualstudio.com/items?itemName=SwaritPandey.voight" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">VS Code Marketplace</a>
+          <a href="https://open-vsx.org/extension/SwaritPandey/voight" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-large">Open VSX</a>
+        </div>
       </div>
     </div>
   </section>
@@ -251,6 +324,7 @@
         <div class="footer-links">
           <a href="https://github.com/voight-dev/voight" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
           <a href="https://marketplace.visualstudio.com/items?itemName=SwaritPandey.voight" target="_blank" rel="noopener noreferrer" class="footer-link">VS Code Marketplace</a>
+          <a href="https://open-vsx.org/extension/SwaritPandey/voight" target="_blank" rel="noopener noreferrer" class="footer-link">Open VSX</a>
           <a href="https://x.com/voight_dev" target="_blank" rel="noopener noreferrer" class="footer-link">X</a>
           <a href="mailto:feedback@voight.dev" class="footer-link">Feedback</a>
         </div>

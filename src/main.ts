@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initHeadlineGrid();
   initScrollReveal();
   initFeatureAccordion();
+  initEditorTabs();
 });
 
 /**
@@ -149,4 +150,40 @@ function initFeatureAccordion(): void {
   }, observerOptions);
 
   featureSteps.forEach(step => observer.observe(step));
+}
+
+/**
+ * Initialize editor tabs for switching between different editor showcases
+ */
+function initEditorTabs(): void {
+  const tabs = document.querySelectorAll('.editor-tab') as NodeListOf<HTMLElement>;
+  const panels = document.querySelectorAll('.editor-panel') as NodeListOf<HTMLElement>;
+
+  if (!tabs.length || !panels.length) return;
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const editorId = tab.getAttribute('data-editor');
+      if (!editorId) return;
+
+      // Update active tab
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      // Update active panel
+      panels.forEach(panel => {
+        if (panel.getAttribute('data-editor') === editorId) {
+          panel.classList.add('active');
+          // Restart video when panel becomes active
+          const video = panel.querySelector('video');
+          if (video) {
+            video.currentTime = 0;
+            video.play();
+          }
+        } else {
+          panel.classList.remove('active');
+        }
+      });
+    });
+  });
 }

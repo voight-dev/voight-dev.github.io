@@ -1,7 +1,7 @@
 {
   "name": "voight-dev.github.io",
   "version": "1.0.0",
-  "description": "Voight – A VS Code extension that surfaces AI-generated code in reviewable segments",
+  "description": "Voight – An editor extension that surfaces AI-generated code in reviewable segments",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/voight-dev/voight-dev.github.io.git"
   },
-  "keywords": ["vscode", "ai", "code-review", "extension"],
+  "keywords": ["vscode", "cursor", "windsurf", "ai", "code-review", "extension", "openvsx"],
   "author": "",
   "license": "ISC",
   "type": "module",

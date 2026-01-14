@@ -1,6 +1,6 @@
 # Voight Website
 
-Static website for Voight, a VS Code extension that surfaces AI-generated code in reviewable segments.
+Static website for Voight, an editor extension that surfaces AI-generated code in reviewable segments. Works with VS Code, Cursor, Windsurf, Antigravity, and other VS Code-compatible editors.
 
 ## Development
 
@@ -45,7 +45,7 @@ The site is automatically deployed to GitHub Pages when changes are pushed to th
 
 ## Design
 
-The website uses a dark theme derived from VS Code's default dark theme with a minimal, professional aesthetic inspired by Linear, Zed, and Warp.
+The website uses a dark theme with a minimal, professional aesthetic inspired by Linear, Zed, and Warp.
 
 ## License
 
